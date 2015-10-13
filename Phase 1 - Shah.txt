@@ -1,0 +1,34 @@
+Subject: Phase 1 - Shah: MSMPTCP: Multi-Source Multi-Path TCP using Random Linear Codes
+
+Phase 1 Project Selection Status Report
+
+Name: Raahil Shah
+
+College: Churchill College    
+
+User Identifier: rds46
+
+Director of Studies: Dr John Fawcett (jkf21)                                         
+
+Please complete 1, 2 and 3 below.
+
+1. Please write 100 words on your current project ideas.
+
+The MPTCP protocol is an evolution of TCP that allows an application to spread data for a single TCP connection across multiple paths. Our aim is to combine the multi path solution of MPTCP with multi sourcing (as with BitTorrent swarms) and network coding to achieve benefits in throughput and reliability from resource pooling and coping with lossy networks and traffic imbalances. We will implement MSMPTCP (in userspace) using random linear network coding and MPTCP. We will evaluate the resource pooling gain versus the overheads for various workloads and topologies using a network simulator (such as ns-3).
+
+2. Please list names of potential project supervisors.
+Dr Jon Crowcroft
+
+3. Is there any chance that your project will involve any
+computing resources other than the Computing Service's MCS and
+software that is already installed there, for example: your own
+machine, machines in College, special peripherals, imported
+software packages, special hardware, network access, substantial
+extra disc space on the MCS.
+
+If so indicate below what, and what it is needed for.
+
+No special resources required.                           
+                                                                 
+                                                                 
+                                                                 
