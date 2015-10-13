@@ -1,0 +1,59 @@
+MSMPTCP
+
+
+Contact: Jon Crowcroft, email Jon
+
+Keywords: TCP, Multipath, Network Coding, Resource Pooling
+
+
+MSMPTCP: Multisource MultiPath TCP using Random Linear Codes...
+A lot of data out there in the Internet is replicated in many places (the most popular items on most streaming services are many fold replicated, both within each data center and across many data centers- whether netflix, akamai, youtube, whatever).
+
+Current tools load balance at the single request level, and curent protocols are "point-to-point" (leaving aside one-to-many multicast for now). It has been shown that resource pooling, by striping data over multiple paths, can provide much simler and often near optimal load balancing. Multipath TCP (MPTCP) came out of this observation, and one paper also points out that Bit-torrent, which provides a swarm (sources data from multiple servers) also helps on the other side of the equation.]
+
+In this work, we want to combine multiple sourcing, like bittorrent/swarms, multiple paths, like MPTCP, with a third technique called network coding, which spreads information over both packets and flows, to maximise the degrees of freedome that resource pooling can enjoy.
+
+The idea can be seen like this:
+
+MPTCP has a single source and sink, but spreads packets over multiple paths. MSMPTCP adds degrees of freedom by sourcing packets from multiple servers. So we have many, many-to-one flows, dispersed over multiple paths and we can then use intermediaries (proxies, middleboxes etc) to network code flows together (c.f. also COPE or MORE in the mesh wifi/roofnet work), as we now have more degrees of freedom to do this coding.
+
+One way to view the new protocol is like MPTCP cut in half (plus coding:)
+
+so MPTCP
+
+    /..........\
+src -..........-dst
+    \........../
+
+thus MSMPTCP
+        src1...\
+        src2...-dst
+        src3.../
+
+    
+The rules for rates on the subflows can be the same.
+
+Note that the ... above contains switches/routers/proxies/middleboxes, which can implement recoding of packets from the same or different flows.
+
+The goal here is not to replace ARQ (TCP ack/retransmit mechanism) for reliability, but to gain more resource pooling through sharing of flows/paths, and this to cope with (or rather, remove) traffic imbalances and therefore reduce hot spots in the network - in a data center (a classic deployment opportunity for MPTCP) MSMPTCP could use middleboxes (switches with network processors or even network function virtualisation) to do coding and recoding of packets from flows...
+
+Two key ideas from existing MIT work:
+
+use random linear codes (not fountain) because they can do anyhting FC can do but not vice versa
+code/decode cost isn't a problem
+in dynamic senario - structured code wont work - because can't add /delete nodes...
+sequence number/ack numbers now use notion of information and degree of freedom rather than byte sequence space....
+Acks have to be "multicast" from dst to srcs
+One question is "why xTCP"? Why not just do this on UDP or a new protocol. Main answer is "reuse machinery of TCP for other stuff (including state setup/security) plus TCP shaped packets are more likely to work in many scenerios (and not get blackholed/discarded by security/firewalls).
+
+Things to do:
+
+Implement - needs random linear codes + mptcp source..
+Evaluate overhead versus resource pooling (also known asstatistical multiplexing) gain, for various workloads (needs realistic file/workload traces - can get from NetApp or Akamai or others).
+Design choices for dealing with occasional packet loss
+References
+
+Baseline for MPTCP-- This paper also contains references to various detailed design papers on MPTCP congestion control for sub-flow rate assignment... mptcp intro
+MIT TCP with network coding ones are: This work has baseline references on random linear codes too. “Network Coding Meets TCP: Theory and Implementation”, J. K. Sundararajan, Shah, D., Médard, M., Jakubczak, S., Mitzenmacher, M. and Barros, J., invited paper, Proceedings of the IEEE, March 2011, pp. 490 – 512 1 2
+The MIT MPTCP with network coding paper
+“Congestion Control for Coded Transport Layers”, M. Kim, Cloud, J., ParandehGheibi, A., Urbina, L., Fouli, K., Leith, D., and Médard, M., IEEE ICC Communication QoS, Reliability and Modeling Symposium 2014 here
