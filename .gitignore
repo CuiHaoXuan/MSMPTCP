@@ -1,0 +1,18 @@
+# OS X Desktop Services #
+.DS_Store
+
+# Latex output #
+*.pdf
+*.aux
+*.log
+*.synctex.gz
+*.fb_latexmk
+*.out
+
+# Sublime project #
+*.sublime-project
+*.sublime-workspace
+
+# Demo dissertation #
+demodiss/*
+

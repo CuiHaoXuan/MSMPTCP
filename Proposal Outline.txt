@@ -1,0 +1,96 @@
+Introduction (200):
+Motivation for multi source + multi path:
+- Devices with multiple network interfaces such as mobile devices with Wifi, 3G
+- Multihoming for example in server farms
+- Redundant data storage and paths in datacenter
+- Better performance especially over lower bandwidth networks
+Motivation for network coding:
+- Increased throughput, robustness against failures and erasures
+- Better performance especially over lossy networks for example wireless
+
+Starting point (50):
+- Will use existing MPTCP design and userspace implementation
+- Will use theory and implementation designs from papers on TCP/NC
+
+Resources required (50):
+- Personal computer: MacBook Pro (8GB, 2.8GHz Intel Core i5) running Mac OS X 10.11
+- Additional software: ns2/ns3 network simulator
+- Backup strategy: 
+	Project files (Code + Research) synced to cloud storage (Google Drive)
+	Source code backed up and version controlled using git + GitHub
+
+Work:
+Sub-projects (100):
+1. Lean and implement network coding for TCP using random linear coding
+2. Design and implement protocol extension for MPTCP to use network coding from 1
+(Fallback for 2. Design and implement protocol extension for simpler protocol, example UDP to use network coding from 1)
+3. Evaluate performance against MPTCP and TCP
+
+Success Criteria (200):
+For sub-project 1:
+- Successful packet transmissions on butterfly network topology with two sources on network simulator with nodes performing network coding and recoding at nodes
+For sub-project 2:
+- Successful packet transmission on butterfly network topology with two sources on network simulator using the MPTCP + NC protocol implemented
+
+Extensions (100):
+- Simulator tests on more topologies
+
+Timeline and Milestones (400):
+
+Michaelmas Week 2-4:
+- Research random linear network coding theory and implementation (papers such as J. Sundarajan, MJ Kim)
+- Deliverable: Summarise theory learned in a LaTeX document for inclusion in progress report
+- Milestone: Submit summary document to supervisor for review/feedback
+
+Michaelmas Week 5-6:
+- Implement network coding layer
+- Deliverable: Source code
+- Milestone: Testable source code for network coding, successfully implementing the theory from work package 1
+
+Michaelmas Week 7-8:
+- Install and learn to use network simulator (like ns2/ns3)
+- Test network coding implementation on butterfly topology
+- Deliverable: Simulator tests and results
+- Milestone: Simulator tests are successful
+
+Christmas break:
+- Possible slack time for sub-project 1
+- Read up on MPTCP theory 
+- Read up on MPTCP userspace implementation
+- Deliverable: Summary of learning on MPTCP in a LaTeX document for inclusion in progress report
+- Milestone: Submit document to supervisor for review/feedback
+
+Lent Week 0 - 2
+- Write progress report (mostly on sub-project 1)
+- Start implementing network coding extension to MPTCP
+- Deliverable: Lent progress report
+- Milestone: Progress report approved by supervisor/overseers
+
+Lent Week 3 - 5
+- Implement MPTCP extension
+- Deliverable: Source code
+- Milstone: Testable source code for MPTCP with network coding
+(Fallback: user simpler protocol implementation (UDP) for network coding extension)
+
+Lent Week 6 - 8
+- Test MPTCP extension with butterfly topology on network simulator
+- Possible slack time to finish up deliverable for sub-project 2
+- Deliverable: Simulator tests and results
+- Millstone: Successful tests
+
+Easter break:
+- Evaluation of throughput obtained on simulator for our MPTCP + NC versus MPTCP and TCP
+- Start drafting dissertation 
+- Deliverable: Dissertation draft chapters
+- Milestone: Draft chapters sent to supervisor for feedback/review
+
+Easter 0 - 2
+- Complete dissertation draft
+- Polish dissertation draft using feedback from supervisor
+- Deliverable: Completed dissertation incorporating supervisor feedback
+- Milestone: All chapters completed and evaluation complete
+
+Easter 3
+- Proof reading and then an early submission so as to concentrate on examination revision
+- Deliverable: Final dissertation
+- Milstone: All parts of the project are complete and reviewed

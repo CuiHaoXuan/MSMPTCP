@@ -4,13 +4,16 @@
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage[margin=25mm]{geometry}
 \usepackage{graphicx}
+
+\renewcommand\labelitemi{--}
+
 \begin{document}
 
 \vfil
 
 \centerline{\Large Computer Science Project Proposal}
 \vspace{0.4in}
-\centerline{\Large MSMPTCP: Multi-Source Multi-Path TCP with Random Linear Codes}
+\centerline{\Large MSMPTCP: Multisource Multipath TCP with Random Linear Codes}
 \vspace{0.4in}
 \centerline{\large R. Shah, Churchill College}
 \vspace{0.3in}
@@ -20,13 +23,12 @@
 
 \vfil
 
-
 \noindent
 {\bf Project Supervisor:} Dr J. Crowcroft
 \vspace{0.2in}
 
 \noindent
-{\bf Director of Studies:} Dr J. Fawcett
+{\bf Director of Studies:} Dr J. K. Fawcett
 \vspace{0.2in}
 \noindent
  
@@ -37,112 +39,160 @@
 % Main document
 
 \section*{Introduction, The Problem To Be Addressed}
+MPTCP is an extension to TCP that sprung from the observation that modern networks are quite often multipath, as seen in server farms that use multihoming, datacenters with several redundant paths between servers and in modern host devices such as mobile devices that have multiple network interfaces (for example, WiFi and 3G). TCP by itself cannot take advantage of this to load balance across multiple paths. MPTCP, on the other hand, allows for multiple subflows to be set up for a single session, reaping the benefits of resource pooling using multiple paths in the network, all transparent to the application. \cite{mptcp}
 
-
-Many students write their CST dissertations in \LaTeX\ and spend a
-fair amount of time learning just how to do that. The purpose of this
-project is to write a demonstration dissertation that explains in
-detail how it done.
-
-This core proposal document will be augmented by a separately-printed
-cover sheet at the front and a resource form at the end. Additional
-sheets for risk assessment and human resources may also need to be
-included.
-
-This document will repeat much of the material that is summarised on
-the additional sheets.
+This project aims to extend MPTCP, to incorporate network coding and to allow for multiple sources for the connection. Adding multisourcing to MPTCP has its advantages in cases where there is a lot of replication of data, for example within and across many datacenters. The addition of network coding to MPTCP spreads information over both packets and flows, maximising the degrees of freedom that resource pooling can enjoy. Further network coding can increase throughput and improve robustness against failures, especially in lossy networks (for example, wireless networks). \cite{nc-tcp}
 
 \section*{Starting Point}
 
-{\em Describe existing state of the art, previous work in this area,
-  libraries and databases to be used. Describe the state of any
-  existing codebase that is to be built on. }
-
-I am already able to write prose using the English language. I have an
-online dictionary, etc.
+This project will build on an existing userspace implementation of MPTCP to extend it to MSMPTCP with random linear coding.
 
 \section*{Resources Required}
 
-{\em A note of the resources required and confirmation of access.}
-
-For this project I shall mainly use my own quad-core computer that
-runs Fedora Linux. Backup will be to github and/or to an SVN
-repository on an external hard disk that is dumped to writable CD/DVD
-media. I have another similar computer to hand should my main machine
-suddenly fail. I require no other special resources.
+\begin{description}
+  \item[Hardware] Personal computer: MacBook Pro (Mid 2014), 8GB 1600 MHz DDR3 RAM, 2.8 GHz Intel Core i5 Processor, running Mac OS X 10.11.
+  \item[Software] Network Simulator (ns-2 or ns-3).
+  \item[Backup] All the project files, i.e. source code, research and authored documents, will be stored on my personal computer and (with at least daily frequency) backed up to cloud storage on Google Drive. All source code will be version controlled and further backed up using git and GitHub.
+\end{description}
 
 \section*{Work to be done}
-
-{\em Describe the technical work.}
 
 The project breaks down into the following sub-projects:
 
 \begin{enumerate}
-
-\item The construction of a skeleton dissertation with the required
-  structure. This involves writing the Makefile and makeing dummy
-  files for the title page, the proforma, chapters 1 to 5, the
-  appendices and the proposal.
-
-\item Filling in the details required in the cover page and proforma.
-
-\item Writing the contents of chapters 1 to 5, including examples of
-  common \LaTeX\ constructs.
-
-\item Adding a example of how to use floating figures and encapsulated
-  postscript diagrams.
-
+  \item Implementing a network coding layer using random linear codes. This will involve implementing a sender side coding module and a receiver side decoding module. The coding implementation will be tested on the standard butterfly network topology in the network simulator. 
+  \item Extending MPTCP to MSMPTCP with network coding. This sub-project will involve extending the MPTCP implementation to include the network coding layer implemented in sub-project 1 along with adding support for multiple sources. The resulting MSMPTCP implementation will be tested in the network simulator on a butterfly topology with multiple sources. 
+  \item Evaluating the performance of MSMPTCP with network coding against MPTCP and TCP. The evaluation will take the form of graphs of throughput obtained for MSMPTCP with random linear codes against that obtained for MPTCP and TCP, for tests run on the network simulator. Performance of MPTCP and MSMPTCP could also be compared for varying number of subflows. 
 \end{enumerate}
 
 \section*{Success Criterion for the Main Result}
 
-
-The project will be a success if I have a completed dissertation with
-the correct chapter titles and I have achieved my other success
-criterion, which is to blah \ldots
-
-
+The success criterion for sub-project 1 would be a set of successful tests of the implemented network coding layer in the network simulator on the standard butterfly topology. Similarly, sub-project 2 can be considered successful if the MSMPTCP with network coding implementation succeeds for a set of network simulator tests on the standard butterfly topology along with a butterfly topology with multiple sources. 
 
 \section*{Possible Extensions}
 
-{\em Potential further envisaged evaluation metrics or extensions.}
-
-If I achieve my main result early I shall try the following
-alternative experiment or method of evaluation \ldots
-
+\begin{enumerate}
+  \item Re-encoding packets at intermediate nodes which is useful in combating against packet losses.
+  \item Testing MSMPTCP with random linear coding with various different network topologies in network simulator.
+\end{enumerate}
 
 \section*{Timetable: Workplan and Milestones to be achieved.}
 
-
-{\em Perhaps list ten or so  two-week work-packages.}
-
-Planned starting date is 16/10/2011.
+Planned starting date is 22/10/2015.
 
 \begin{enumerate}
 
-\item {\bf Michaelmas weeks 2--4} Learn to use X. Read book Y. Read papers Z.
+\item {\bf Michaelmas weeks 3, 4} (22/10/2015 - 04/11/2015)
 
-\item {\bf Michaelmas weeks 5--6} Do preliminary test of Q.
-`'
-\item {\bf Michaelmas weeks 7--8} Start implementation of main task A.
+Research on network coding theory with specific focus on random linear codes and implementations of network coding with TCP.
+\begin{itemize}
+  \item {\em Deliverable:} Summary of theory learned and an implementation strategy for random linear coding in a LaTeX document for inclusion in the progress report. 
+  \item {\em Milestone:} Submit the deliverable document to supervisor for review and feedback.
+\end{itemize}
 
-\item {\bf Michaelmas vacation} Finish A and start main task B.
+\item {\bf Michaelmas weeks 5, 6} (5/10/2015 - 18/11/2015)
 
-\item {\bf Lent weeks 0--2} Write progress report. Generate corpus of
-  test examples. Finish task B.
+Implement network coding layer for sub-project 1 as sender and receiver side modules for coding and decoding respectively.
+\begin{itemize}
+  \item {\em Deliverable:} Source code and documentation.
+  \item {\em Milestone:} Have a testable network coding implementation based on the theory learned in work package 1.
+\end{itemize}
 
-\item {\bf Lent weeks 3--5} Run main experiments and achieve working project.
+\item {\bf Michaelmas weeks 7, 8} (19/11/2015 - 02/12/2015)
 
-\item {\bf Lent weeks 6--8} Second main deliverable here.
+Install network simulator (ns-2/ns-3) and learn to use it. Run simulations testing the network coding layer of sub-project 1 for the standard butterfly topology.
+\begin{itemize}
+  \item {\em Deliverable:} Simulation code and results in network simulator.
+  \item {\em Milestone:} Have a tested random linear coding implementation.
+\end{itemize}
 
-\item {\bf Easter vacation:} Extensions and writing dissertation main
-  chapters.
+\item {\bf Michaelmas vacation} (14/12/2015 - 27/12/2015)
 
-\item {\bf Easter term 0--2:}  Further evaluation and complete dissertation.
+Catch up on any remaining work for sub-project 1. 
+Read up on MPTCP and get familiar with the MPTCP implementation code.
+\begin{itemize}
+  \item {\em Deliverable:} Summary of research done in a LaTeX document for inclusion in progress report.
+  \item {\em Milestone:} Submit the deliverable document to supervisor for review and feedback.
+\end{itemize}
 
-\item {\bf Easter term 3:} Proof reading and then an early submission
-  so as to concentrate on examination revision.
+\item {\bf Lent weeks 1, 2} (14/01/2016 - 27/01/2016)
+
+Research on extending MPTCP to allow for multisourcing.
+Write the Progress Report based on the work done for sub-project 1 and the preliminary reading for sub-project 2.
+\begin{itemize}
+  \item {\em Deliverable:} Progress report.
+  \item {\em Milestone:} Submit progress report to supervisor and overseers. Have a multisource extension design for MPTCP.
+\end{itemize}
+
+\item {\bf Lent weeks 3, 4} (28/01/2016 - 10/02/2016)
+
+Begin implementation of MSMPTCP using the network coding layer implementation from sub-project 1.
+\begin{itemize}
+  \item {\em Deliverable:} Source code and documentation.
+  \item {\em Milestone:} Successful unit tests for any code modules written.
+\end{itemize}
+
+\item {\bf Lent weeks 5, 6} (11/02/2016 - 24/02/2016)
+
+Continue implementation of MSMPTCP using the network coding layer implementation from sub-project 1.
+\begin{itemize}
+  \item {\em Deliverable:} Source code and documentation.
+  \item {\em Milestone:} Successful unit tests for any code modules written. Complete feature set of multisourcing and network coding added to MPTCP.
+\end{itemize}
+
+\item {\bf Lent weeks 7, 8} (25/02/2016 - 09/03/2016)
+
+Test finished MSMPTCP implementation with the butterfly topology on network simulator.
+\begin{itemize}
+  \item {\em Deliverable:} Simulation code and results in network simulator.
+  \item {\em Milestone:} Have a tested, complete MSMPTCP with random linear coding implementation.
+\end{itemize}
+
+\item {\bf Easter vacation:} (14/03/2016 - 27/03/2016)
+
+Catch up on any remaining work for sub-project 2.
+Begin drafting the main chapters of the dissertation.
+\begin{itemize}
+  \item {\em Deliverable:} Draft dissertation chapters.
+  \item {\em Milestone:} Submit draft chapters to supervisor for review and feedback.
+\end{itemize}
+
+\item {\bf Easter weeks 1, 2:} (21/04/2016 - 04/05/2016)
+
+Perform evaluation (sub-project 3). Finish up draft dissertation while incorporating changes from feedback received.
+\begin{itemize}
+  \item {\em Deliverable:} Evaluation graphs. Complete draft dissertation.
+  \item {\em Milestone:} Complete all chapters of dissertation and submit the completed dissertation to supervisor for review and feedback.
+\end{itemize}
+
+\item {\bf Easter week 3:} (05/05/2016 - 11/05/2016)
+
+Proof read the dissertation and submit it. 
+\begin{itemize}
+  \item {\em Deliverable:} Two paper copies and a PDF file of the final dissertation.
+  \item {\em Milestone:} Submit the dissertation copies and code files to Student Administration.
+\end{itemize}
 
 \end{enumerate}
+
+% References
+
+\begin{thebibliography}{9}
+
+\bibitem{mptcp}
+  O. Bonaventure, M. Handley, C. Raiciu,
+  ``An overview of Multipath TCP'',
+  \emph{The Magazine of the USENIX Association},
+  2012.
+
+\bibitem{nc-tcp}
+  J. K. Sundararajan, D. Shah, M. Médard, S. Jakubczak, M. Mitzenmacher, J. Barros,
+  ``Network Coding Meets TCP: Theory and Implementation'',
+  \emph{Invited Paper, Proceedings of the IEEE},
+  March 2011,
+  pp. 490-512.
+
+\end{thebibliography}
+
 
 \end{document}
