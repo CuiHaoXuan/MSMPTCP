@@ -6,7 +6,7 @@
 *.aux
 *.log
 *.synctex.gz
-*.fb_latexmk
+*.fdb_latexmk
 *.out
 
 # Sublime project #
