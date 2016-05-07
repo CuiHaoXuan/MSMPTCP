@@ -1,0 +1,48 @@
+\documentclass[12pt,a4paper,twoside]{article}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[margin=25mm]{geometry}
+\usepackage{graphicx}
+
+\renewcommand\labelitemi{--}
+
+\begin{document}
+
+\vfil
+
+\centerline{\Large Part II Project: Progress Report}
+\vspace{0.4in}
+\centerline{\Large MSMPTCP: Multisource Multipath TCP using Random Linear Codes}
+\vspace{0.4in}
+\centerline{\large R. Shah, Churchill College}
+\vspace{0.3in}
+\centerline{\large \texttt{rds46@cam.ac.uk}}
+\vspace{0.3in}
+\centerline{\large \today}
+
+\vfil
+
+\noindent
+{\bf Project Supervisor:} Dr J. Crowcroft
+\vspace{0.2in}
+
+\noindent
+{\bf Director of Studies:} Dr J. K. Fawcett
+\vspace{0.2in}
+\noindent
+ 
+\noindent
+{\bf Project Overseers:} Dr T. G. Griffin  \& Dr P. Lio'
+
+\section*{Work Completed}
+
+According to the proposal I have done some reading on network coding theory and implementation, specifically to do with random linear codes. I have also done reading on MPTCP and its implementation. I have installed and familiarised myself with ns-3 and used it to build demo topologies. My work on the random linear coding layer implementation is ongoing and hence puts the project behind schedule. I have source code for and encoding and decoding module which are incomplete and yet to be fully tested on the butterfly topology in ns-3. I have a working implementation of the generation and decoding of the linear combinations of packets and am working on piecing them into a testable protocol (TCP) and producing the evaluation in ns-3.
+
+\section*{Difficulties}
+
+The primary difficulties faced while working on this project were unfamiliarity with network level programming which resulted in slower progress in implementing the network coding module. I spent some time (which was not set in the original proposal) reading more about the TCP implementation to familiarise myself with network programming. Further, learning and using ns-3 for this project's purposes took longer than anticipated. 
+
+\section*{Schedule}
+
+Although the project is behind schedule according to the proposal (by about two weeks), my aim is to work harder in Lent to get the project back on track. My proposal has allocated one two week slot to slack time which will be used to make sure the core project is completed before the dissertation is to be drafted. Further, in the case that the upcoming task of extending MPTCP seems too challenging to complete within the remaining time frame, I will revert to the fallback plan as detailed in the proposal of using UDP to demonstrate the network coding implementation. 
+
+\end{document}

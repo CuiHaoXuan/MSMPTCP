@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
   std::cout<<"finished IP assignment"<<std::endl; 
 //*************************************************************************************
   /* Generate Route. */
-  Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
+  // Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
   //Ipv4GlobalRoutingHelper::RecomputeRoutingTables();
   Ipv4Address multicastSource ("10.0.0.1");
   Ipv4Address multicastGroup  ("225.225.225.0");
