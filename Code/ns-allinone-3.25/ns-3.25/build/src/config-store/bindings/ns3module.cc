@@ -690,6 +690,218 @@ PyTypeObject PyNs3FileConfig_Type = {
 
 
 
+std::map<void*, PyObject*> PyNs3GtkConfigStore_wrapper_registry;
+
+
+static int
+_wrap_PyNs3GtkConfigStore__tp_init__0(PyNs3GtkConfigStore *self, PyObject *args, PyObject *kwargs, PyObject **return_exception)
+{
+    PyNs3GtkConfigStore *arg0;
+    const char *keywords[] = {"arg0", NULL};
+    
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, (char *) "O!", (char **) keywords, &PyNs3GtkConfigStore_Type, &arg0)) {
+        {
+            PyObject *exc_type, *traceback;
+            PyErr_Fetch(&exc_type, return_exception, &traceback);
+            Py_XDECREF(exc_type);
+            Py_XDECREF(traceback);
+        }
+        return -1;
+    }
+    self->obj = new ns3::GtkConfigStore(*((PyNs3GtkConfigStore *) arg0)->obj);
+    self->flags = PYBINDGEN_WRAPPER_FLAG_NONE;
+    return 0;
+}
+
+static int
+_wrap_PyNs3GtkConfigStore__tp_init__1(PyNs3GtkConfigStore *self, PyObject *args, PyObject *kwargs, PyObject **return_exception)
+{
+    const char *keywords[] = {NULL};
+    
+    if (!PyArg_ParseTupleAndKeywords(args, kwargs, (char *) "", (char **) keywords)) {
+        {
+            PyObject *exc_type, *traceback;
+            PyErr_Fetch(&exc_type, return_exception, &traceback);
+            Py_XDECREF(exc_type);
+            Py_XDECREF(traceback);
+        }
+        return -1;
+    }
+    self->obj = new ns3::GtkConfigStore();
+    self->flags = PYBINDGEN_WRAPPER_FLAG_NONE;
+    return 0;
+}
+
+int _wrap_PyNs3GtkConfigStore__tp_init(PyNs3GtkConfigStore *self, PyObject *args, PyObject *kwargs)
+{
+    int retval;
+    PyObject *error_list;
+    PyObject *exceptions[2] = {0,};
+    retval = _wrap_PyNs3GtkConfigStore__tp_init__0(self, args, kwargs, &exceptions[0]);
+    if (!exceptions[0]) {
+        return retval;
+    }
+    retval = _wrap_PyNs3GtkConfigStore__tp_init__1(self, args, kwargs, &exceptions[1]);
+    if (!exceptions[1]) {
+        Py_DECREF(exceptions[0]);
+        return retval;
+    }
+    error_list = PyList_New(2);
+    PyList_SET_ITEM(error_list, 0, PyObject_Str(exceptions[0]));
+    Py_DECREF(exceptions[0]);
+    PyList_SET_ITEM(error_list, 1, PyObject_Str(exceptions[1]));
+    Py_DECREF(exceptions[1]);
+    PyErr_SetObject(PyExc_TypeError, error_list);
+    Py_DECREF(error_list);
+    return -1;
+}
+
+
+PyObject *
+_wrap_PyNs3GtkConfigStore_ConfigureDefaults(PyNs3GtkConfigStore *self)
+{
+    PyObject *py_retval;
+    
+    self->obj->ConfigureDefaults();
+    Py_INCREF(Py_None);
+    py_retval = Py_None;
+    return py_retval;
+}
+
+
+PyObject *
+_wrap_PyNs3GtkConfigStore_ConfigureAttributes(PyNs3GtkConfigStore *self)
+{
+    PyObject *py_retval;
+    
+    self->obj->ConfigureAttributes();
+    Py_INCREF(Py_None);
+    py_retval = Py_None;
+    return py_retval;
+}
+
+
+static PyObject*
+_wrap_PyNs3GtkConfigStore__copy__(PyNs3GtkConfigStore *self)
+{
+
+    PyNs3GtkConfigStore *py_copy;
+    py_copy = PyObject_New(PyNs3GtkConfigStore, &PyNs3GtkConfigStore_Type);
+    py_copy->obj = new ns3::GtkConfigStore(*self->obj);
+    py_copy->flags = PYBINDGEN_WRAPPER_FLAG_NONE;
+    PyNs3GtkConfigStore_wrapper_registry[(void *) py_copy->obj] = (PyObject *) py_copy;
+    return (PyObject*) py_copy;
+}
+
+static PyMethodDef PyNs3GtkConfigStore_methods[] = {
+    {(char *) "ConfigureDefaults", (PyCFunction) _wrap_PyNs3GtkConfigStore_ConfigureDefaults, METH_NOARGS, "ConfigureDefaults()\n\n" },
+    {(char *) "ConfigureAttributes", (PyCFunction) _wrap_PyNs3GtkConfigStore_ConfigureAttributes, METH_NOARGS, "ConfigureAttributes()\n\n" },
+    {(char *) "__copy__", (PyCFunction) _wrap_PyNs3GtkConfigStore__copy__, METH_NOARGS, NULL},
+    {NULL, NULL, 0, NULL}
+};
+
+static void
+_wrap_PyNs3GtkConfigStore__tp_dealloc(PyNs3GtkConfigStore *self)
+{
+    std::map<void*, PyObject*>::iterator wrapper_lookup_iter;
+    wrapper_lookup_iter = PyNs3GtkConfigStore_wrapper_registry.find((void *) self->obj);
+    if (wrapper_lookup_iter != PyNs3GtkConfigStore_wrapper_registry.end()) {
+        PyNs3GtkConfigStore_wrapper_registry.erase(wrapper_lookup_iter);
+    }
+    
+        ns3::GtkConfigStore *tmp = self->obj;
+        self->obj = NULL;
+        if (!(self->flags&PYBINDGEN_WRAPPER_FLAG_OBJECT_NOT_OWNED)) {
+            delete tmp;
+        }
+    Py_TYPE(self)->tp_free((PyObject*)self);
+}
+
+static PyObject*
+_wrap_PyNs3GtkConfigStore__tp_richcompare (PyNs3GtkConfigStore *PYBINDGEN_UNUSED(self), PyNs3GtkConfigStore *other, int opid)
+{
+    
+    if (!PyObject_IsInstance((PyObject*) other, (PyObject*) &PyNs3GtkConfigStore_Type)) {
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    }
+    switch (opid)
+    {
+    case Py_LT:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    case Py_LE:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    case Py_EQ:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    case Py_NE:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    case Py_GE:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    case Py_GT:
+        Py_INCREF(Py_NotImplemented);
+        return Py_NotImplemented;
+    } /* closes switch (opid) */
+    Py_INCREF(Py_NotImplemented);
+    return Py_NotImplemented;
+}
+
+PyTypeObject PyNs3GtkConfigStore_Type = {
+    PyVarObject_HEAD_INIT(NULL, 0)
+    (char *) "config_store.GtkConfigStore",            /* tp_name */
+    sizeof(PyNs3GtkConfigStore),                  /* tp_basicsize */
+    0,                                 /* tp_itemsize */
+    /* methods */
+    (destructor)_wrap_PyNs3GtkConfigStore__tp_dealloc,        /* tp_dealloc */
+    (printfunc)0,                      /* tp_print */
+    (getattrfunc)NULL,       /* tp_getattr */
+    (setattrfunc)NULL,       /* tp_setattr */
+    (cmpfunc)NULL,           /* tp_compare */
+    (reprfunc)NULL,             /* tp_repr */
+    (PyNumberMethods*)NULL,     /* tp_as_number */
+    (PySequenceMethods*)NULL, /* tp_as_sequence */
+    (PyMappingMethods*)NULL,   /* tp_as_mapping */
+    (hashfunc)NULL,             /* tp_hash */
+    (ternaryfunc)NULL,          /* tp_call */
+    (reprfunc)NULL,              /* tp_str */
+    (getattrofunc)NULL,     /* tp_getattro */
+    (setattrofunc)NULL,     /* tp_setattro */
+    (PyBufferProcs*)NULL,  /* tp_as_buffer */
+    Py_TPFLAGS_DEFAULT,                      /* tp_flags */
+    "GtkConfigStore(arg0)\nGtkConfigStore()",                        /* Documentation string */
+    (traverseproc)NULL,     /* tp_traverse */
+    (inquiry)NULL,             /* tp_clear */
+    (richcmpfunc)_wrap_PyNs3GtkConfigStore__tp_richcompare,   /* tp_richcompare */
+    0,             /* tp_weaklistoffset */
+    (getiterfunc)NULL,          /* tp_iter */
+    (iternextfunc)NULL,     /* tp_iternext */
+    (struct PyMethodDef*)PyNs3GtkConfigStore_methods, /* tp_methods */
+    (struct PyMemberDef*)0,              /* tp_members */
+    0,                     /* tp_getset */
+    NULL,                              /* tp_base */
+    NULL,                              /* tp_dict */
+    (descrgetfunc)NULL,    /* tp_descr_get */
+    (descrsetfunc)NULL,    /* tp_descr_set */
+    0,                 /* tp_dictoffset */
+    (initproc)_wrap_PyNs3GtkConfigStore__tp_init,             /* tp_init */
+    (allocfunc)PyType_GenericAlloc,           /* tp_alloc */
+    (newfunc)PyType_GenericNew,               /* tp_new */
+    (freefunc)0,             /* tp_free */
+    (inquiry)NULL,             /* tp_is_gc */
+    NULL,                              /* tp_bases */
+    NULL,                              /* tp_mro */
+    NULL,                              /* tp_cache */
+    NULL,                              /* tp_subclasses */
+    NULL,                              /* tp_weaklist */
+    (destructor) NULL                  /* tp_del */
+};
+
+
+
 
 void
 PyNs3NoneFileConfig__PythonHelper::Attributes()
@@ -2006,6 +2218,12 @@ MOD_INIT(config_store)
         return MOD_ERROR;
     }
     PyModule_AddObject(m, (char *) "FileConfig", (PyObject *) &PyNs3FileConfig_Type);
+    PyModule_AddObject(m, (char *) "_PyNs3GtkConfigStore_wrapper_registry", PyCObject_FromVoidPtr(&PyNs3GtkConfigStore_wrapper_registry, NULL));
+    /* Register the 'ns3::GtkConfigStore' class */
+    if (PyType_Ready(&PyNs3GtkConfigStore_Type)) {
+        return MOD_ERROR;
+    }
+    PyModule_AddObject(m, (char *) "GtkConfigStore", (PyObject *) &PyNs3GtkConfigStore_Type);
     /* Register the 'ns3::NoneFileConfig' class */
     PyNs3NoneFileConfig_Type.tp_base = &PyNs3FileConfig_Type;
     if (PyType_Ready(&PyNs3NoneFileConfig_Type)) {

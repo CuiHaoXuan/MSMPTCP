@@ -94,6 +94,9 @@
 // Kodo includes
 #include "nc-broadcast.h" // Contains the broadcast topology class
 //! [3]
+
+#include "ns3/netanim-module.h" // Netanim inclusion
+
 using namespace ns3;
 
 int main (int argc, char *argv[])
@@ -197,7 +200,7 @@ int main (int argc, char *argv[])
 
   for (uint32_t n = 1; n <= users; n++)
     {
-      positionAlloc->Add (Vector (5.0, 5.0*n, 0.0));
+      positionAlloc->Add (Vector ((users - n), (n - 1.0), 0.0));
     }
 
   mobility.SetPositionAllocator (positionAlloc);
@@ -248,10 +251,15 @@ int main (int argc, char *argv[])
   Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
   //! [13]
   // Pcap tracing
-  wifiPhy.EnablePcap ("kodo-wifi-broadcast", devices);
+  wifiPhy.EnablePcap ("nc-wifi-broadcast", devices);
 
   Simulator::ScheduleWithContext (source->GetNode ()->GetId (), Seconds (1.0),
     &Broadcast::SendPacket, &wifiBroadcast, source, interPacketInterval);
+
+
+  // Netanim animation output
+  AnimationInterface anim ("nc-wifi-broadcast.xml");
+  anim.EnablePacketMetadata (true);
 
   Simulator::Run ();
   Simulator::Destroy ();

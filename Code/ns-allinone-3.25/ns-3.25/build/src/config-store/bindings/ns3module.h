@@ -498,6 +498,17 @@ extern std::map<void*, PyObject*> PyNs3FileConfig_wrapper_registry;
 
 typedef struct {
     PyObject_HEAD
+    ns3::GtkConfigStore *obj;
+    PyBindGenWrapperFlags flags:8;
+} PyNs3GtkConfigStore;
+
+
+extern PyTypeObject PyNs3GtkConfigStore_Type;
+
+extern std::map<void*, PyObject*> PyNs3GtkConfigStore_wrapper_registry;
+
+typedef struct {
+    PyObject_HEAD
     ns3::NoneFileConfig *obj;
     PyObject *inst_dict;
     PyBindGenWrapperFlags flags:8;

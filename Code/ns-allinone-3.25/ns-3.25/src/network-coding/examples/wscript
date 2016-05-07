@@ -22,16 +22,22 @@ def build(bld):
         obj.install_path = None
 
     # Wifi Broadcast Network Coding Example
-    obj = bld.create_ns3_program('nc-wifi-broadcast',
-                                 ['core', 'applications', 'point-to-point',
-                                  'point-to-point-layout', 'internet', 'wifi'])
+    obj = bld.create_ns3_program('nc-wifi-broadcast', 
+                                 ['network-coding', 'applications', 'point-to-point',
+                                  'point-to-point-layout', 'internet', 'wifi', 'netanim'])
     obj.source = 'nc-wifi-broadcast.cc'
     set_properties(obj)
 
     # Wired Broadcast Network Coding Example
     obj = bld.create_ns3_program('nc-wired-broadcast',
-                                 ['core', 'applications', 'point-to-point',
+                                 ['network-coding', 'applications', 'point-to-point',
                                   'point-to-point-layout', 'internet'])
     obj.source = 'nc-wired-broadcast.cc'
     set_properties(obj)
 
+    # Intermediate Node Recoding Example
+    obj = bld.create_ns3_program('nc-recoders',
+                                 ['core', 'applications', 'point-to-point',
+                                  'point-to-point-layout', 'internet'])
+    obj.source = 'nc-recoders.cc'
+    set_properties(obj)
