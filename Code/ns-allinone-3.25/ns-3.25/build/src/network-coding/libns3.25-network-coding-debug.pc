@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.25
+
+Name: libns3-network-coding
+Description: ns-3 module ns3-network-coding
+Version: 3.25
+Libs: -L${libdir} -lns3.25-network-coding-debug
+Cflags: -I${includedir}
+Requires: libns3.25-core-debug

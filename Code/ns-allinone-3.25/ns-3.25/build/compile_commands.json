@@ -71,8 +71,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/sixlowpan -I../src/sixlowpan -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/sixlowpan/model/sixlowpan-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/sixlowpan/model/sixlowpan-header.cc.1.o'", 
-    "file": "../src/sixlowpan/model/sixlowpan-header.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/service-flow-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/service-flow-manager.cc.1.o'", 
+    "file": "../src/wimax/model/service-flow-manager.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -106,11 +106,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/wireless/wifi-ap.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/wireless/wifi-ap.cc.4.o'", 
-    "file": "../examples/wireless/wifi-ap.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/icmpv6-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/icmpv6-header.cc.1.o'", 
     "file": "../src/internet/model/icmpv6-header.cc"
   }, 
@@ -138,11 +133,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-pdcp-sap.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-pdcp-sap.cc.1.o'", 
     "file": "../src/lte/model/lte-pdcp-sap.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/helper/wave-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/helper/wave-helper.cc.1.o'", 
-    "file": "../src/wave/helper/wave-helper.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -268,11 +258,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/traffic-control/examples/red-vs-ared.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/traffic-control/examples/red-vs-ared.cc.2.o'", 
     "file": "../src/traffic-control/examples/red-vs-ared.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-socket-factory-impl.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-socket-factory-impl.cc.1.o'", 
-    "file": "../src/internet/model/tcp-socket-factory-impl.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -426,8 +411,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/service-flow-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/service-flow-manager.cc.1.o'", 
-    "file": "../src/wimax/model/service-flow-manager.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/sixlowpan -I../src/sixlowpan -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/sixlowpan/model/sixlowpan-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/sixlowpan/model/sixlowpan-header.cc.1.o'", 
+    "file": "../src/sixlowpan/model/sixlowpan-header.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -481,8 +466,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lr-wpan -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/lr-wpan/test\"' ../src/lr-wpan/test/lr-wpan-cca-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lr-wpan/test/lr-wpan-cca-test.cc.3.o'", 
-    "file": "../src/lr-wpan/test/lr-wpan-cca-test.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/queue.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/queue.cc.1.o'", 
+    "file": "../src/network/utils/queue.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -566,8 +551,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/ht-capabilities.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/ht-capabilities.cc.1.o'", 
-    "file": "../src/wifi/model/ht-capabilities.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-rlc-tm.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-rlc-tm.cc.1.o'", 
+    "file": "../src/lte/model/lte-rlc-tm.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -648,6 +633,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/wireless/wifi-wired-bridging.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/wireless/wifi-wired-bridging.cc.5.o'", 
     "file": "../examples/wireless/wifi-wired-bridging.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/model/buffer.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/model/buffer.cc.1.o'", 
+    "file": "../src/network/model/buffer.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -1231,6 +1221,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-fr-hard-algorithm.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-fr-hard-algorithm.cc.1.o'", 
+    "file": "../src/lte/model/lte-fr-hard-algorithm.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/sll-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/sll-header.cc.1.o'", 
     "file": "../src/network/utils/sll-header.cc"
   }, 
@@ -1368,6 +1363,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv6-pmtu-cache.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv6-pmtu-cache.cc.1.o'", 
     "file": "../src/internet/model/ipv6-pmtu-cache.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mpi/model/mpi-interface.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mpi/model/mpi-interface.cc.1.o'", 
+    "file": "../src/mpi/model/mpi-interface.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -1801,6 +1801,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/network-coding/model/network-coding.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/model/network-coding.cc.1.o'", 
+    "file": "../src/network-coding/model/network-coding.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/cara-wifi-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/cara-wifi-manager.cc.1.o'", 
     "file": "../src/wifi/model/cara-wifi-manager.cc"
   }, 
@@ -1941,8 +1946,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-socket.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-socket.cc.1.o'", 
-    "file": "../src/internet/model/tcp-socket.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/helper/wave-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/helper/wave-helper.cc.1.o'", 
+    "file": "../src/wave/helper/wave-helper.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2011,6 +2016,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/trace-source-accessor.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/trace-source-accessor.cc.1.o'", 
+    "file": "../src/core/model/trace-source-accessor.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/tcp-timestamp-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/tcp-timestamp-test.cc.3.o'", 
     "file": "../src/internet/test/tcp-timestamp-test.cc"
   }, 
@@ -2066,11 +2076,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/nix-vector-routing/examples/nms-p2p-nix.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/nix-vector-routing/examples/nms-p2p-nix.cc.2.o'", 
-    "file": "../src/nix-vector-routing/examples/nms-p2p-nix.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-fdmt-ff-mac-scheduler.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-fdmt-ff-mac-scheduler.cc.3.o'", 
     "file": "../src/lte/test/lte-test-fdmt-ff-mac-scheduler.cc"
   }, 
@@ -2088,6 +2093,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/dsdv -I../src/dsdv -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/dsdv/model/dsdv-routing-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/dsdv/model/dsdv-routing-protocol.cc.1.o'", 
     "file": "../src/dsdv/model/dsdv-routing-protocol.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-l4-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-l4-protocol.cc.1.o'", 
+    "file": "../src/internet/model/tcp-l4-protocol.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2201,6 +2211,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/traffic-control/model/queue-disc.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/traffic-control/model/queue-disc.cc.1.o'", 
+    "file": "../src/traffic-control/model/queue-disc.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -fno-strict-aliasing -fno-common -dynamic -fno-common -fno-strict-aliasing -fwrapv -fwrapv -Wno-array-bounds -fPIC -I. -I.. -Isrc/dsdv/bindings -I../src/dsdv/bindings -I/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DNS_DEPRECATED= -DNS3_DEPRECATED_H -DHAVE_PYEXT=1 -DENABLE_DTRACE -DMACOSX -DNDEBUG -DNDEBUG -DENABLE_DTRACE -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 src/dsdv/bindings/ns3module.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/dsdv/bindings/ns3module.cc.7.o'", 
     "file": "src/dsdv/bindings/ns3module.cc"
   }, 
@@ -2301,6 +2316,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/uan/model/acoustic-modem-energy-model.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/uan/model/acoustic-modem-energy-model.cc.1.o'", 
+    "file": "../src/uan/model/acoustic-modem-energy-model.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/wave -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/wave/test\"' ../src/wave/test/ocb-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/test/ocb-test-suite.cc.3.o'", 
     "file": "../src/wave/test/ocb-test-suite.cc"
   }, 
@@ -2358,6 +2378,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/antenna/model/cosine-antenna-model.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/antenna/model/cosine-antenna-model.cc.1.o'", 
     "file": "../src/antenna/model/cosine-antenna-model.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/dsr -I../src/dsr -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/dsr/model/dsr-fs-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/dsr/model/dsr-fs-header.cc.1.o'", 
+    "file": "../src/dsr/model/dsr-fs-header.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2446,6 +2471,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/status-code.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/status-code.cc.1.o'", 
+    "file": "../src/wifi/model/status-code.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv4.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv4.cc.1.o'", 
     "file": "../src/internet/model/ipv4.cc"
   }, 
@@ -2473,11 +2503,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/config-store/model/config-store.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/config-store/model/config-store.cc.1.o'", 
     "file": "../src/config-store/model/config-store.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/tcp-rto-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/tcp-rto-test.cc.3.o'", 
-    "file": "../src/internet/test/tcp-rto-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2546,8 +2571,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/core -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 '-DNS_TEST_SOURCEDIR=\"src/core/test\"' ../src/core/test/config-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/test/config-test-suite.cc.3.o'", 
-    "file": "../src/core/test/config-test-suite.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/wifi-phy.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/wifi-phy.cc.1.o'", 
+    "file": "../src/wifi/model/wifi-phy.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2636,8 +2661,13 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/buildings -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/buildings/test\"' ../src/buildings/test/buildings-shadowing-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/buildings/test/buildings-shadowing-test.cc.3.o'", 
-    "file": "../src/buildings/test/buildings-shadowing-test.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ss-link-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ss-link-manager.cc.1.o'", 
+    "file": "../src/wimax/model/ss-link-manager.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/ht-capabilities.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/ht-capabilities.cc.1.o'", 
+    "file": "../src/wifi/model/ht-capabilities.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2671,8 +2701,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/onoe-wifi-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/onoe-wifi-manager.cc.1.o'", 
-    "file": "../src/wifi/model/onoe-wifi-manager.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/nix-vector-routing/examples/nms-p2p-nix.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/nix-vector-routing/examples/nms-p2p-nix.cc.2.o'", 
+    "file": "../src/nix-vector-routing/examples/nms-p2p-nix.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2686,6 +2716,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../scratch/scratch-simulator.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/scratch/scratch-simulator.cc.5.o'", 
+    "file": "../scratch/scratch-simulator.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-rlc-um.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-rlc-um.cc.1.o'", 
     "file": "../src/lte/model/lte-rlc-um.cc"
   }, 
@@ -2693,11 +2728,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ss-service-flow-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ss-service-flow-manager.cc.1.o'", 
     "file": "../src/wimax/model/ss-service-flow-manager.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/wifi-phy.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/wifi-phy.cc.1.o'", 
-    "file": "../src/wifi/model/wifi-phy.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2816,6 +2846,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-ue-phy.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-ue-phy.cc.3.o'", 
+    "file": "../src/lte/test/lte-test-ue-phy.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ul-mac-messages.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ul-mac-messages.cc.1.o'", 
     "file": "../src/wimax/model/ul-mac-messages.cc"
   }, 
@@ -2851,8 +2886,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/aodv -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/aodv/test\"' ../src/aodv/test/bug-772.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/aodv/test/bug-772.cc.3.o'", 
-    "file": "../src/aodv/test/bug-772.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/ipv4-packet-info-tag-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/ipv4-packet-info-tag-test-suite.cc.3.o'", 
+    "file": "../src/internet/test/ipv4-packet-info-tag-test-suite.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2936,8 +2971,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/buildings -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/buildings/test\"' ../src/buildings/test/building-position-allocator-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/buildings/test/building-position-allocator-test.cc.3.o'", 
-    "file": "../src/buildings/test/building-position-allocator-test.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/stats/helper/gnuplot-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/stats/helper/gnuplot-helper.cc.1.o'", 
+    "file": "../src/stats/helper/gnuplot-helper.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -2963,6 +2998,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/ipv6-raw-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/ipv6-raw-test.cc.3.o'", 
     "file": "../src/internet/test/ipv6-raw-test.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -I.. -Isrc/network-coding/examples/include -I../src/network-coding/examples/include -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/network-coding/examples/nc-wifi-broadcast.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/examples/nc-wifi-broadcast.cc.2.o'", 
+    "file": "../src/network-coding/examples/nc-wifi-broadcast.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3038,11 +3078,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/config-store/model/xml-config.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/config-store/model/xml-config.cc.1.o'", 
     "file": "../src/config-store/model/xml-config.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -fno-strict-aliasing -fno-common -dynamic -fno-common -fno-strict-aliasing -fwrapv -fwrapv -Wno-array-bounds -fPIC -I. -I.. -Isrc/energy/bindings -I../src/energy/bindings -I/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DNS_DEPRECATED= -DNS3_DEPRECATED_H -DHAVE_PYEXT=1 -DENABLE_DTRACE -DMACOSX -DNDEBUG -DNDEBUG -DENABLE_DTRACE -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 src/energy/bindings/ns3module.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/energy/bindings/ns3module.cc.7.o'", 
-    "file": "src/energy/bindings/ns3module.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3131,8 +3166,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/model/node.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/model/node.cc.1.o'", 
-    "file": "../src/network/model/node.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mobility/examples/bonnmotion-ns2-example.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mobility/examples/bonnmotion-ns2-example.cc.6.o'", 
+    "file": "../src/mobility/examples/bonnmotion-ns2-example.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3171,11 +3206,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-option.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-option.cc.1.o'", 
-    "file": "../src/internet/model/tcp-option.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mesh/model/dot11s/ie-dot11s-id.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mesh/model/dot11s/ie-dot11s-id.cc.1.o'", 
     "file": "../src/mesh/model/dot11s/ie-dot11s-id.cc"
   }, 
@@ -3196,13 +3226,18 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/command-line.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/command-line.cc.1.o'", 
+    "file": "../src/core/model/command-line.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/a3-rsrp-handover-algorithm.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/a3-rsrp-handover-algorithm.cc.1.o'", 
     "file": "../src/lte/model/a3-rsrp-handover-algorithm.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/mobility -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/mobility/test\"' ../src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc.3.o'", 
-    "file": "../src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/model/node.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/model/node.cc.1.o'", 
+    "file": "../src/network/model/node.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3236,11 +3271,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/model/channel-coordinator.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/model/channel-coordinator.cc.1.o'", 
-    "file": "../src/wave/model/channel-coordinator.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/wave/examples/wave-simple-80211p.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/examples/wave-simple-80211p.cc.1.o'", 
     "file": "../src/wave/examples/wave-simple-80211p.cc"
   }, 
@@ -3256,8 +3286,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/helper/wifi-80211p-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/helper/wifi-80211p-helper.cc.1.o'", 
-    "file": "../src/wave/helper/wifi-80211p-helper.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -I.. -Isrc/network-coding/examples/include -I../src/network-coding/examples/include -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/network-coding/examples/nc-wired-broadcast.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/examples/nc-wired-broadcast.cc.3.o'", 
+    "file": "../src/network-coding/examples/nc-wired-broadcast.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3391,11 +3421,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ss-scheduler.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ss-scheduler.cc.1.o'", 
-    "file": "../src/wimax/model/ss-scheduler.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/ap-wifi-mac.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/ap-wifi-mac.cc.1.o'", 
     "file": "../src/wifi/model/ap-wifi-mac.cc"
   }, 
@@ -3421,18 +3446,13 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/queue.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/queue.cc.1.o'", 
-    "file": "../src/network/utils/queue.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/wireless/ofdm-vht-validation.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/wireless/ofdm-vht-validation.cc.14.o'", 
     "file": "../examples/wireless/ofdm-vht-validation.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/status-code.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/status-code.cc.1.o'", 
-    "file": "../src/wifi/model/status-code.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/network-coding/examples/network-coding-example.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/examples/network-coding-example.cc.2.o'", 
+    "file": "../src/network-coding/examples/network-coding-example.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3443,11 +3463,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/helper/net-device-container.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/helper/net-device-container.cc.1.o'", 
     "file": "../src/network/helper/net-device-container.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/antenna -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 '-DNS_TEST_SOURCEDIR=\"src/antenna/test\"' ../src/antenna/test/test-parabolic-antenna.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/antenna/test/test-parabolic-antenna.cc.3.o'", 
-    "file": "../src/antenna/test/test-parabolic-antenna.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3526,11 +3541,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/bridge/examples/csma-bridge.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/bridge/examples/csma-bridge.cc.1.o'", 
-    "file": "../src/bridge/examples/csma-bridge.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../utils/bench-simulator.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/utils/bench-simulator.cc.2.o'", 
     "file": "../utils/bench-simulator.cc"
   }, 
@@ -3571,8 +3581,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-ue-phy.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-ue-phy.cc.3.o'", 
-    "file": "../src/lte/test/lte-test-ue-phy.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/network-coding/helper/network-coding-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/helper/network-coding-helper.cc.1.o'", 
+    "file": "../src/network-coding/helper/network-coding-helper.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3646,8 +3656,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/command-line.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/command-line.cc.1.o'", 
-    "file": "../src/core/model/command-line.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/buildings -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/buildings/test\"' ../src/buildings/test/buildings-shadowing-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/buildings/test/buildings-shadowing-test.cc.3.o'", 
+    "file": "../src/buildings/test/buildings-shadowing-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3806,11 +3816,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv6-option-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv6-option-header.cc.1.o'", 
-    "file": "../src/internet/model/ipv6-option-header.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/energy/helper/li-ion-energy-source-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/energy/helper/li-ion-energy-source-helper.cc.1.o'", 
     "file": "../src/energy/helper/li-ion-energy-source-helper.cc"
   }, 
@@ -3863,11 +3868,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/spectrum/helper/spectrum-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/spectrum/helper/spectrum-helper.cc.1.o'", 
     "file": "../src/spectrum/helper/spectrum-helper.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/uan/model/uan-prop-model.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/uan/model/uan-prop-model.cc.1.o'", 
-    "file": "../src/uan/model/uan-prop-model.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3931,8 +3931,13 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/uan/model/acoustic-modem-energy-model.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/uan/model/acoustic-modem-energy-model.cc.1.o'", 
-    "file": "../src/uan/model/acoustic-modem-energy-model.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/onoe-wifi-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/onoe-wifi-manager.cc.1.o'", 
+    "file": "../src/wifi/model/onoe-wifi-manager.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv6-extension-demux.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv6-extension-demux.cc.1.o'", 
+    "file": "../src/internet/model/ipv6-extension-demux.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -3941,8 +3946,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/dsr -I../src/dsr -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/dsr/model/dsr-fs-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/dsr/model/dsr-fs-header.cc.1.o'", 
-    "file": "../src/dsr/model/dsr-fs-header.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-rlc-sdu-status-tag.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-rlc-sdu-status-tag.cc.1.o'", 
+    "file": "../src/lte/model/lte-rlc-sdu-status-tag.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4121,13 +4126,18 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-link-adaptation.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-link-adaptation.cc.3.o'", 
-    "file": "../src/lte/test/lte-test-link-adaptation.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-option.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-option.cc.1.o'", 
+    "file": "../src/internet/model/tcp-option.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/wifi -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/wifi/test\"' ../src/wifi/test/tx-duration-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/test/tx-duration-test.cc.3.o'", 
     "file": "../src/wifi/test/tx-duration-test.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/crc32.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/crc32.cc.1.o'", 
+    "file": "../src/network/utils/crc32.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4161,11 +4171,6 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/mgt-headers.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/mgt-headers.cc.1.o'", 
-    "file": "../src/wifi/model/mgt-headers.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-ue-phy.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-ue-phy.cc.1.o'", 
     "file": "../src/lte/model/lte-ue-phy.cc"
   }, 
@@ -4191,8 +4196,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/ascii-file.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/ascii-file.cc.1.o'", 
-    "file": "../src/network/utils/ascii-file.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/uan/model/uan-prop-model.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/uan/model/uan-prop-model.cc.1.o'", 
+    "file": "../src/uan/model/uan-prop-model.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4431,8 +4436,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/stats/helper/gnuplot-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/stats/helper/gnuplot-helper.cc.1.o'", 
-    "file": "../src/stats/helper/gnuplot-helper.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-socket.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-socket.cc.1.o'", 
+    "file": "../src/internet/model/tcp-socket.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4511,8 +4516,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv6-extension-demux.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv6-extension-demux.cc.1.o'", 
-    "file": "../src/internet/model/ipv6-extension-demux.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/rng-stream.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/rng-stream.cc.1.o'", 
+    "file": "../src/core/model/rng-stream.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4541,8 +4546,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/rng-stream.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/rng-stream.cc.1.o'", 
-    "file": "../src/core/model/rng-stream.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wifi/model/mgt-headers.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wifi/model/mgt-headers.cc.1.o'", 
+    "file": "../src/wifi/model/mgt-headers.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4581,6 +4586,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mesh/model/flame/flame-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mesh/model/flame/flame-protocol.cc.1.o'", 
+    "file": "../src/mesh/model/flame/flame-protocol.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/sixlowpan/examples/example-ping-lr-wpan.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/sixlowpan/examples/example-ping-lr-wpan.cc.2.o'", 
     "file": "../src/sixlowpan/examples/example-ping-lr-wpan.cc"
   }, 
@@ -4606,8 +4616,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../scratch/scratch-simulator.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/scratch/scratch-simulator.cc.5.o'", 
-    "file": "../scratch/scratch-simulator.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/bridge/examples/csma-bridge.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/bridge/examples/csma-bridge.cc.1.o'", 
+    "file": "../src/bridge/examples/csma-bridge.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -4896,6 +4906,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -I.. -Isrc/network-coding/examples/include -I../src/network-coding/examples/include -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/network-coding/examples/kodo-wifi-broadcast.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/examples/kodo-wifi-broadcast.cc.3.o'", 
+    "file": "../src/network-coding/examples/kodo-wifi-broadcast.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/test.cc.1.o'", 
     "file": "../src/core/model/test.cc"
   }, 
@@ -4916,8 +4931,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/global-value.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/global-value.cc.1.o'", 
-    "file": "../src/core/model/global-value.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/wireless/wifi-ap.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/wireless/wifi-ap.cc.4.o'", 
+    "file": "../examples/wireless/wifi-ap.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5026,8 +5041,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/trace-source-accessor.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/trace-source-accessor.cc.1.o'", 
-    "file": "../src/core/model/trace-source-accessor.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lr-wpan -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/lr-wpan/test\"' ../src/lr-wpan/test/lr-wpan-cca-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lr-wpan/test/lr-wpan-cca-test.cc.3.o'", 
+    "file": "../src/lr-wpan/test/lr-wpan-cca-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5086,6 +5101,16 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/applications/helper/udp-echo-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/applications/helper/udp-echo-helper.cc.1.o'", 
+    "file": "../src/applications/helper/udp-echo-helper.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/network -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/network/test\"' ../src/network/test/buffer-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/test/buffer-test.cc.3.o'", 
+    "file": "../src/network/test/buffer-test.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -Isrc/aodv -I../src/aodv -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/aodv/model/aodv-routing-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/aodv/model/aodv-routing-protocol.cc.1.o'", 
     "file": "../src/aodv/model/aodv-routing-protocol.cc"
   }, 
@@ -5111,18 +5136,18 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/ipv4-packet-info-tag-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/ipv4-packet-info-tag-test-suite.cc.3.o'", 
-    "file": "../src/internet/test/ipv4-packet-info-tag-test-suite.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/aodv -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/aodv/test\"' ../src/aodv/test/bug-772.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/aodv/test/bug-772.cc.3.o'", 
+    "file": "../src/aodv/test/bug-772.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/tutorial/sixth.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/tutorial/sixth.cc.7.o'", 
-    "file": "../examples/tutorial/sixth.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/object.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/object.cc.1.o'", 
+    "file": "../src/core/model/object.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-rlc-sdu-status-tag.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-rlc-sdu-status-tag.cc.1.o'", 
-    "file": "../src/lte/model/lte-rlc-sdu-status-tag.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/flow-monitor/model/ipv4-flow-classifier.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/flow-monitor/model/ipv4-flow-classifier.cc.1.o'", 
+    "file": "../src/flow-monitor/model/ipv4-flow-classifier.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5221,6 +5246,11 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/spectrum/model/wifi-spectrum-value-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/spectrum/model/wifi-spectrum-value-helper.cc.1.o'", 
+    "file": "../src/spectrum/model/wifi-spectrum-value-helper.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/mpi/examples/third-distributed.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mpi/examples/third-distributed.cc.2.o'", 
     "file": "../src/mpi/examples/third-distributed.cc"
   }, 
@@ -5246,8 +5276,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/traffic-control/model/queue-disc.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/traffic-control/model/queue-disc.cc.1.o'", 
-    "file": "../src/traffic-control/model/queue-disc.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/mobility -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/mobility/test\"' ../src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc.3.o'", 
+    "file": "../src/mobility/test/steady-state-random-waypoint-mobility-model-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5313,11 +5343,6 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../examples/ipv6/test-ipv6.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/ipv6/test-ipv6.cc.5.o'", 
     "file": "../examples/ipv6/test-ipv6.cc"
-  }, 
-  {
-    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-rlc-tm.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-rlc-tm.cc.1.o'", 
-    "file": "../src/lte/model/lte-rlc-tm.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5391,8 +5416,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/crc32.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/crc32.cc.1.o'", 
-    "file": "../src/network/utils/crc32.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../examples/tutorial/sixth.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/examples/tutorial/sixth.cc.7.o'", 
+    "file": "../examples/tutorial/sixth.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5476,8 +5501,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mobility/examples/bonnmotion-ns2-example.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mobility/examples/bonnmotion-ns2-example.cc.6.o'", 
-    "file": "../src/mobility/examples/bonnmotion-ns2-example.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/helper/wifi-80211p-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/helper/wifi-80211p-helper.cc.1.o'", 
+    "file": "../src/wave/helper/wifi-80211p-helper.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5496,8 +5521,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/applications/helper/udp-echo-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/applications/helper/udp-echo-helper.cc.1.o'", 
-    "file": "../src/applications/helper/udp-echo-helper.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wave/model/channel-coordinator.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wave/model/channel-coordinator.cc.1.o'", 
+    "file": "../src/wave/model/channel-coordinator.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5676,8 +5701,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/object.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/object.cc.1.o'", 
-    "file": "../src/core/model/object.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/core -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 '-DNS_TEST_SOURCEDIR=\"src/core/test\"' ../src/core/test/config-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/test/config-test-suite.cc.3.o'", 
+    "file": "../src/core/test/config-test-suite.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5696,8 +5721,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/fdtbfq-ff-mac-scheduler.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/fdtbfq-ff-mac-scheduler.cc.1.o'", 
-    "file": "../src/lte/model/fdtbfq-ff-mac-scheduler.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/network-coding -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 '-DNS_TEST_SOURCEDIR=\"src/network-coding/test\"' ../src/network-coding/test/network-coding-test-suite.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network-coding/test/network-coding-test-suite.cc.3.o'", 
+    "file": "../src/network-coding/test/network-coding-test-suite.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5713,6 +5738,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/test-epc-tft-classifier.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/test-epc-tft-classifier.cc.3.o'", 
     "file": "../src/lte/test/test-epc-tft-classifier.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/examples/sample-random-variable-stream.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/examples/sample-random-variable-stream.cc.7.o'", 
+    "file": "../src/core/examples/sample-random-variable-stream.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5751,8 +5781,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/examples/sample-random-variable-stream.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/examples/sample-random-variable-stream.cc.7.o'", 
-    "file": "../src/core/examples/sample-random-variable-stream.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/buildings -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/buildings/test\"' ../src/buildings/test/building-position-allocator-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/buildings/test/building-position-allocator-test.cc.3.o'", 
+    "file": "../src/buildings/test/building-position-allocator-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5776,8 +5806,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mpi/model/mpi-interface.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mpi/model/mpi-interface.cc.1.o'", 
-    "file": "../src/mpi/model/mpi-interface.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -fno-strict-aliasing -fno-common -dynamic -fno-common -fno-strict-aliasing -fwrapv -fwrapv -Wno-array-bounds -fPIC -I. -I.. -Isrc/energy/bindings -I../src/energy/bindings -I/System/Library/Frameworks/Python.framework/Versions/2.7/include/python2.7 -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DNS_DEPRECATED= -DNS3_DEPRECATED_H -DHAVE_PYEXT=1 -DENABLE_DTRACE -DMACOSX -DNDEBUG -DNDEBUG -DENABLE_DTRACE -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 src/energy/bindings/ns3module.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/energy/bindings/ns3module.cc.7.o'", 
+    "file": "src/energy/bindings/ns3module.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5788,6 +5818,11 @@
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
     "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/mesh -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/mesh/test/flame\"' ../src/mesh/test/flame/regression.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mesh/test/flame/regression.cc.3.o'", 
     "file": "../src/mesh/test/flame/regression.cc"
+  }, 
+  {
+    "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-rlc-am-transmitter.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-rlc-am-transmitter.cc.3.o'", 
+    "file": "../src/lte/test/lte-test-rlc-am-transmitter.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5821,8 +5856,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/flow-monitor/model/ipv4-flow-classifier.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/flow-monitor/model/ipv4-flow-classifier.cc.1.o'", 
-    "file": "../src/flow-monitor/model/ipv4-flow-classifier.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ss-scheduler.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ss-scheduler.cc.1.o'", 
+    "file": "../src/wimax/model/ss-scheduler.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5901,8 +5936,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/lte-fr-hard-algorithm.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/lte-fr-hard-algorithm.cc.1.o'", 
-    "file": "../src/lte/model/lte-fr-hard-algorithm.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/ipv6-option-header.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/ipv6-option-header.cc.1.o'", 
+    "file": "../src/internet/model/ipv6-option-header.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -5916,8 +5951,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/model/buffer.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/model/buffer.cc.1.o'", 
-    "file": "../src/network/model/buffer.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/network/utils/ascii-file.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/utils/ascii-file.cc.1.o'", 
+    "file": "../src/network/utils/ascii-file.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -6026,8 +6061,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/mesh/model/flame/flame-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/mesh/model/flame/flame-protocol.cc.1.o'", 
-    "file": "../src/mesh/model/flame/flame-protocol.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 ../src/lte/model/fdtbfq-ff-mac-scheduler.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/model/fdtbfq-ff-mac-scheduler.cc.1.o'", 
+    "file": "../src/lte/model/fdtbfq-ff-mac-scheduler.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -6056,8 +6091,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-l4-protocol.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-l4-protocol.cc.1.o'", 
-    "file": "../src/internet/model/tcp-l4-protocol.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/internet/model/tcp-socket-factory-impl.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/model/tcp-socket-factory-impl.cc.1.o'", 
+    "file": "../src/internet/model/tcp-socket-factory-impl.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -6076,8 +6111,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/spectrum/model/wifi-spectrum-value-helper.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/spectrum/model/wifi-spectrum-value-helper.cc.1.o'", 
-    "file": "../src/spectrum/model/wifi-spectrum-value-helper.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/internet -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/internet/test\"' ../src/internet/test/tcp-rto-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/internet/test/tcp-rto-test.cc.3.o'", 
+    "file": "../src/internet/test/tcp-rto-test.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -6176,13 +6211,13 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 ../src/wimax/model/ss-link-manager.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/wimax/model/ss-link-manager.cc.1.o'", 
-    "file": "../src/wimax/model/ss-link-manager.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-link-adaptation.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-link-adaptation.cc.3.o'", 
+    "file": "../src/lte/test/lte-test-link-adaptation.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/network -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 '-DNS_TEST_SOURCEDIR=\"src/network/test\"' ../src/network/test/buffer-test.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/network/test/buffer-test.cc.3.o'", 
-    "file": "../src/network/test/buffer-test.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/antenna -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 '-DNS_TEST_SOURCEDIR=\"src/antenna/test\"' ../src/antenna/test/test-parabolic-antenna.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/antenna/test/test-parabolic-antenna.cc.3.o'", 
+    "file": "../src/antenna/test/test-parabolic-antenna.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
@@ -6241,8 +6276,8 @@
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -I../src/lte -fPIC -I. -I.. -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_LIBXML2=1 '-DNS_TEST_SOURCEDIR=\"src/lte/test\"' ../src/lte/test/lte-test-rlc-am-transmitter.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/lte/test/lte-test-rlc-am-transmitter.cc.3.o'", 
-    "file": "../src/lte/test/lte-test-rlc-am-transmitter.cc"
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Werror -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -fPIC -I. -I.. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 ../src/core/model/global-value.cc -c -o '/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build/src/core/model/global-value.cc.1.o'", 
+    "file": "../src/core/model/global-value.cc"
   }, 
   {
     "directory": "/Users/Raahil/Google Drive/Cambridge/CS/II Project/Code/ns-allinone-3.25/ns-3.25/build", 
