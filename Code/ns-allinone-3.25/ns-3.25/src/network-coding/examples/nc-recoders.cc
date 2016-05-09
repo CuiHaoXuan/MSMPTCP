@@ -57,12 +57,12 @@
 //               |             Decoder (Node N+1)                |
 //               |                                               |
 //               | Net Device 1   Net Device 2  ..  Net Device N |
-//               | IP: 10.2.1.2   IP: 10.2.1.4  ..  IP: 10.2.1.2N|
+//               | IP: 10.2.1.2   IP: 10.2.1.4  ..  IP: 10.2.1.2
 //               +-----------------------------------------------+
 
 //                           N: Number of recoders
 //                           eE-R: errorRateEncoderRecoders
-//                           eR-D: errorRateRecodersDecoder
+//                           N|eR-D: errorRateRecodersDecoder
 //! [1]
 // By using the previous topology and IP addressing, we ensure that packets
 // are properly broadcasted to the recoders and each combination is sent from
@@ -269,7 +269,7 @@ int main (int argc, char *argv[])
 
   // Do pcap tracing on all point-to-point devices on all nodes. File naming
   // convention is: kodo-recoders-[NODE_NUMBER]-[DEVICE_NUMBER].pcap
-  // ptp.EnablePcapAll ("kodo-recoders");
+  ptp.EnablePcapAll ("nc-recoders");
 
   // Schedule processes
   // Encoder

@@ -183,7 +183,7 @@ int main (int argc, char *argv[])
   Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
 
   // Do pcap tracing on all point-to-point devices on all nodes
-  // pointToPoint.EnablePcapAll ("kodo-wired-broadcast");
+  pointToPoint.EnablePcapAll ("nc-wired-broadcast");
 
   Simulator::ScheduleWithContext (source->GetNode ()->GetId (), Seconds (1.0),
     &Broadcast::SendPacket, &wiredBroadcast, source, interPacketInterval);

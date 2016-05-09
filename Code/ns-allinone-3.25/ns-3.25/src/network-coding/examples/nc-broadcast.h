@@ -38,6 +38,9 @@ public:
 
     // Initialize the encoder data buffer
     m_encoderBuffer.resize (m_encoder.block_size ());
+
+    std::generate(m_encoderBuffer.begin(), m_encoderBuffer.end(), rand);
+
     m_encoder.set_const_symbols (m_encoderBuffer.data (),
       m_encoder.block_size ());
     m_payload.resize (m_encoder.payload_size ());
