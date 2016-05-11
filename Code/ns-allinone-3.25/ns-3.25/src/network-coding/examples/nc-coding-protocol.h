@@ -53,6 +53,7 @@ private:
 	/**
 	* Coding layer objects
 	*/
+	kodocpp::field m_field;
 	kodocpp::encoder m_encoder;
 	std::vector<uint8_t> m_encoderBuffer;
 	int m_bufferedPackets;
@@ -76,6 +77,11 @@ private:
 	* Helper functions
 	*/
 	void ReadyNextDataBlock ();
+
+	void SetUpEncoder ();
+
+	void SetUpDecoder ();
+
 	void printByteVector(std::vector<uint8_t> bytes, int size)
 	{
 		for (std::vector<uint8_t>::const_iterator i = bytes.begin(); i != bytes.end(); i++)

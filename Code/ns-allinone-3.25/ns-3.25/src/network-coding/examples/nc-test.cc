@@ -129,9 +129,9 @@ int main(int argc, char const *argv[])
 	NetworkCodingProtocol nc_sink (sink, field, generationSize, packetSize);
 
 	vector<uint8_t> dataBuffer;
-	dataBuffer.resize (2 * packetSize * generationSize);
+	dataBuffer.resize (10 * packetSize * generationSize);
 	generate(dataBuffer.begin(), dataBuffer.end(), rand);
-		
+
 	// Send original packets
 	nc_source.SendData (&dataBuffer, dataBuffer.size ());
 

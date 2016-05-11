@@ -21,51 +21,33 @@ m_genSize (generationSize),
 m_packSize (packetSize)
 {
 	// Set field from field string
-	kodocpp::field field;
-
 	std::map<std::string,kodocpp::field> fieldMap;
 	fieldMap["binary"] = kodocpp::field::binary;
 	fieldMap["binary4"] = kodocpp::field::binary4;
 	fieldMap["binary8"] = kodocpp::field::binary8;
 
 	// Use binary field for bad field string or map string to field type
+	m_field = kodocpp::field::binary;
 	if (fieldMap.find (fieldStr) == fieldMap.end ())
-	{
 		NS_LOG_INFO ("Incorrect field string, using binary instead.");
-		field = kodocpp::field::binary;
-	}
 	else
-		field =  fieldMap[fieldStr];
+		m_field =  fieldMap[fieldStr];
 
 	NS_LOG_INFO ("Coding Parameters:");
 	NS_LOG_INFO ("Field = " << fieldStr);
 	NS_LOG_INFO ("Generation size = " << m_genSize);
 	NS_LOG_INFO ("Packet size = " << m_packSize << " bytes");
 
-	// Create encoder and decoder factories
-	kodocpp::encoder_factory encoderFactory (kodocpp::codec::full_vector, field, m_genSize, m_packSize);
-	kodocpp::decoder_factory decoderFactory (kodocpp::codec::full_vector, field, m_genSize, m_packSize);
-
-	// Build encoder and decoder
-	m_encoder = encoderFactory.build ();
-	m_decoder = decoderFactory.build ();
-	// Turn off systematic mode coding 
-	m_encoder.set_systematic_off ();
-
 	// Initialize encoder and decoder buffers
-	m_encoderBuffer.resize (m_encoder.block_size ());
-	m_decoderBuffer.resize (m_decoder.block_size ());
+	m_encoderBuffer.resize (m_genSize * m_packSize);
+	m_decoderBuffer.resize (m_genSize * m_packSize);
 
-	NS_LOG_INFO ("Encoder initialized with buffer size = " << m_encoderBuffer.size () << " bytes.");
-	NS_LOG_INFO ("Decoder initialized with buffer size = " << m_decoderBuffer.size () << " bytes.");
-
-	// Set encoder source data
-	m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
+	// Build and set encoder and decoder
+	SetUpEncoder ();
+	SetUpDecoder ();
+	
 	// Set up encoder output payload = coded packet size + 1 custom header for packet type
 	m_payload.resize (m_encoder.payload_size () + 1);
-
-	// Set decoder data buffer
-	m_decoder.set_mutable_symbols (m_decoderBuffer.data (), m_decoder.block_size ());
 
 	// Add trace callback to decoder
 	// auto callback = [](const std::string& zone, const std::string& data)
@@ -93,6 +75,23 @@ m_packSize (packetSize)
 
 	// Set socket receive callback
 	socket->SetRecvCallback (MakeCallback (&NetworkCodingProtocol::Receive, this));
+}
+
+void 
+NetworkCodingProtocol::SetUpEncoder ()
+{
+	kodocpp::encoder_factory encoderFactory (kodocpp::codec::full_vector, m_field, m_genSize, m_packSize);
+	m_encoder = encoderFactory.build ();
+	m_encoder.set_systematic_off ();
+	m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
+}
+
+void
+NetworkCodingProtocol::SetUpDecoder ()
+{
+	kodocpp::decoder_factory decoderFactory (kodocpp::codec::full_vector, m_field, m_genSize, m_packSize);
+	m_decoder = decoderFactory.build ();
+	m_decoder.set_mutable_symbols (m_decoderBuffer.data (), m_decoder.block_size ());
 }
 
 void
@@ -130,15 +129,15 @@ NetworkCodingProtocol::ReadyNextDataBlock ()
 	{
 		copy (m_data->begin () + m_dataIndex, m_data->end (), m_encoderBuffer.begin ());
 		m_dataIndex = m_dataSize;
-		m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
 	}
 	else
 	{
 		copy (m_data->begin () + m_dataIndex,
 			m_data->begin () + m_dataIndex + m_encoder.block_size (), m_encoderBuffer.begin ());
 		m_dataIndex += m_encoder.block_size ();
-		m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
 	}
+
+	SetUpEncoder ();
 
 	NS_LOG_INFO ("Encoder block:");
 	printByteVector(m_encoderBuffer, m_encoder.block_size ());
@@ -202,11 +201,11 @@ NetworkCodingProtocol::Receive (Ptr<Socket> socket)
 			NS_LOG_INFO ("---Decoding Complete---");
 			NS_LOG_INFO ("Packets received = " << m_recvdCount);
 
-			// for (std::vector<uint8_t>::const_iterator i = m_decoderBuffer.begin ();
-			// 	i != m_decoderBuffer.end (); i++)
-			// 	NS_LOG_INFO (std::hex << int(*i));
+			SetUpDecoder ();
 
-			// Send Ack Packet
+			NS_LOG_INFO ("Decoder buffer: ");
+			printByteVector (m_decoderBuffer, m_decoder.block_size ());
+
 			SendAck ();			
 		}
 	}
