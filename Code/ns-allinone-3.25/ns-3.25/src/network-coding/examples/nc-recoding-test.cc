@@ -1,6 +1,14 @@
 // -*- Mode: C++; c-file-style: "gnu"; indent-tabs-mode:nil; -*-
 
-// Test client for Network Coding Protocol
+// Test client for Network Coding Protocol with recoding
+
+// Topology:
+
+//    R1 ---- D1
+//   /   \  /
+// S      R3 
+//   \   /  \
+//    R2 ---- D2
 
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
@@ -8,6 +16,7 @@
 #include "ns3/wifi-module.h"
 #include "ns3/internet-module.h"
 #include "ns3/log.h"
+#include "ns3/netanim-module.h"
 
 #include <iostream>
 #include <vector>
@@ -18,19 +27,19 @@
 using namespace ns3;
 using namespace std;
 
-NS_LOG_COMPONENT_DEFINE ("NetworkCodingTest");
+NS_LOG_COMPONENT_DEFINE ("NetworkRecodingTest");
 
 int main(int argc, char const *argv[])
 {
 	LogComponentEnable ("NetworkCodingProtocol", LOG_LEVEL_INFO);
 
-	cout << " Network Coding Test Client " << endl;
+	cout << " Network Recoding Test Client " << endl;
 	cout << "----------------------------" << endl;
 
 	// Coding parameters
-	uint32_t packetSize = 10;
-	uint32_t generationSize = 5;
-	string field = "binary";
+	// uint32_t packetSize = 10;
+	// uint32_t generationSize = 5;
+	// string field = "binary";
 
 	/*
 	* Wifi parameters and settings
@@ -53,7 +62,7 @@ int main(int argc, char const *argv[])
 	* Setting up the network topology and protocol layers
 	*/
 	NodeContainer nodes;
-	nodes.Create (2);
+	nodes.Create (6);
 
 	NS_LOG_INFO ("Nodes created.");
 
@@ -85,8 +94,12 @@ int main(int argc, char const *argv[])
 	// Mobility model
 	MobilityHelper mobility;
 	Ptr<ListPositionAllocator> positionAlloc = CreateObject<ListPositionAllocator> ();
-	positionAlloc->Add (Vector (0.0, 0.0, 0.0)); // Source node
-	positionAlloc->Add (Vector (10.0, 0.0, 0.0)); // Sink node
+	positionAlloc->Add (Vector (0.0, 5.0, 0.0)); // Source node S
+	positionAlloc->Add (Vector (10.0, 0.0, 0.0)); // Intermediate R1
+	positionAlloc->Add (Vector (10.0, 10.0, 0.0)); // Intermediate R2
+	positionAlloc->Add (Vector (15.0, 5.0, 0.0)); // Intermediate R3
+	positionAlloc->Add (Vector (20.0, 0.0, 0.0)); // Sink D1
+	positionAlloc->Add (Vector (20.0, 10.0, 0.0)); // Sink D2
 	mobility.SetPositionAllocator (positionAlloc);
 	mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
 	mobility.Install (nodes);
@@ -105,39 +118,26 @@ int main(int argc, char const *argv[])
 
 	// UDP Sockets
 	TypeId tid = TypeId::LookupByName ("ns3::UdpSocketFactory");
-	Ptr<Socket> source = Socket::CreateSocket (nodes.Get (0), tid);
-	Ptr<Socket> sink = Socket::CreateSocket (nodes.Get (1), tid);
+	Ptr<Socket> s = Socket::CreateSocket (nodes.Get (0), tid);
+	Ptr<Socket> r1 = Socket::CreateSocket (nodes.Get (1), tid);
+	Ptr<Socket> r2 = Socket::CreateSocket (nodes.Get (2), tid);
+	Ptr<Socket> r3 = Socket::CreateSocket (nodes.Get (3), tid);
+	Ptr<Socket> d1 = Socket::CreateSocket (nodes.Get (4), tid);
+	Ptr<Socket> d2 = Socket::CreateSocket (nodes.Get (5), tid);
 
-	NS_LOG_INFO ("UDP sockets created.");
-
-	// Connect sockets
 	uint16_t port = 5000;
-	InetSocketAddress sourceAddr = InetSocketAddress (ipInterfaceContainer.GetAddress(0, 0), port);
-	InetSocketAddress sinkAddr = InetSocketAddress (ipInterfaceContainer.GetAddress(1, 0), port);
-	source->Connect (sinkAddr);
-	sink->Connect (sourceAddr);
 
-	// InetSocketAddress local = InetSocketAddress (Ipv4Address::GetAny (), port);
-
-	sink->Bind (sinkAddr);
-	source->Bind (sourceAddr);
 
 	/*
 	* Setting up Network Coding protocol
 	*/
-	NetworkCodingProtocol nc_source (source, field, generationSize, packetSize);
-	NetworkCodingProtocol nc_sink (sink, field, generationSize, packetSize);
-
-	vector<uint8_t> dataBuffer;
-	dataBuffer.resize (10 * packetSize * generationSize);
-	generate(dataBuffer.begin(), dataBuffer.end(), rand);
-
-	// Send original packets
-	nc_source.SendData (&dataBuffer, dataBuffer.size ());
 
 	// Enable pcap tracing
-	wifiPhy.EnablePcap ("nc-test", devices);
+	wifiPhy.EnablePcap ("nc-recoding-test", devices);
 
+	// Netanim animation output
+	AnimationInterface anim ("nc-recoding-test.xml");
+	anim.EnablePacketMetadata (true);
 
 	Simulator::Run ();
 	Simulator::Destroy ();

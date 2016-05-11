@@ -47,3 +47,9 @@ def build(bld):
        ['network-coding'])
     obj.source = ['nc-test.cc', 'nc-coding-protocol.cc']
     set_properties(obj)
+
+    # Network coding layer test Example with recoding
+    obj = bld.create_ns3_program('nc-recoding-test',
+       ['network-coding', 'netanim'])
+    obj.source = ['nc-recoding-test.cc', 'nc-coding-protocol.cc']
+    set_properties(obj)
