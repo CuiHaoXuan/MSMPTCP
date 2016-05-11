@@ -20,13 +20,6 @@ using namespace std;
 
 NS_LOG_COMPONENT_DEFINE ("NetworkCodingTest");
 
-void printByteVector(vector<uint8_t> bytes, int size)
-{
-	for (vector<uint8_t>::const_iterator i = bytes.begin(); i != bytes.end(); i++)
-		cout << hex << int(*i) << ' ';
-	cout << endl;
-}
-
 int main(int argc, char const *argv[])
 {
 	LogComponentEnable ("NetworkCodingProtocol", LOG_LEVEL_INFO);
@@ -116,11 +109,15 @@ int main(int argc, char const *argv[])
 
 	// Connect sockets
 	uint16_t port = 5000;
+	InetSocketAddress sourceAddr = InetSocketAddress (ipInterfaceContainer.GetAddress(0, 0), port);
 	InetSocketAddress sinkAddr = InetSocketAddress (ipInterfaceContainer.GetAddress(1, 0), port);
 	source->Connect (sinkAddr);
+	sink->Connect (sourceAddr);
 
-	InetSocketAddress local = InetSocketAddress (Ipv4Address::GetAny (), port);
-	sink->Bind (local);
+	// InetSocketAddress local = InetSocketAddress (Ipv4Address::GetAny (), port);
+
+	sink->Bind (sinkAddr);
+	source->Bind (sourceAddr);
 
 	// Turn on global static routing
 	Ipv4GlobalRoutingHelper::PopulateRoutingTables ();
@@ -132,13 +129,9 @@ int main(int argc, char const *argv[])
 	NetworkCodingProtocol nc_sink (sink, field, generationSize, packetSize);
 
 	vector<uint8_t> dataBuffer;
-	dataBuffer.resize (packetSize * generationSize - 10);
+	dataBuffer.resize (2 * packetSize * generationSize);
 	generate(dataBuffer.begin(), dataBuffer.end(), rand);
-
-	NS_LOG_INFO ("Random data buffer:");
-
-	printByteVector(dataBuffer, dataBuffer.size ());
-	
+		
 	// Send original packets
 	nc_source.SendData (&dataBuffer, dataBuffer.size ());
 

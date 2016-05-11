@@ -12,6 +12,7 @@ using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE("NetworkCodingProtocol");
 
+
 NetworkCodingProtocol::NetworkCodingProtocol (const Ptr<Socket> socket, const std::string fieldStr,
 	const uint32_t generationSize, const uint32_t packetSize) :
 m_socket (socket),
@@ -60,24 +61,24 @@ m_packSize (packetSize)
 
 	// Set encoder source data
 	m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
-	// Set up encoder output payload
-	m_payload.resize (m_encoder.payload_size ());
+	// Set up encoder output payload = coded packet size + 1 custom header for packet type
+	m_payload.resize (m_encoder.payload_size () + 1);
 
 	// Set decoder data buffer
 	m_decoder.set_mutable_symbols (m_decoderBuffer.data (), m_decoder.block_size ());
 
 	// Add trace callback to decoder
-	auto callback = [](const std::string& zone, const std::string& data)
-	{
-		std::set<std::string> filters =
-		{ "decoder_state", "symbol_coefficients_before_read_symbol" };
-		if (filters.count (zone))
-		{
-			std::cout << zone << ":" << std::endl;
-			std::cout << data << std::endl;
-		}
-	};
-	m_decoder.set_trace_callback (callback);
+	// auto callback = [](const std::string& zone, const std::string& data)
+	// {
+	// 	std::set<std::string> filters =
+	// 	{ "decoder_state", "symbol_coefficients_before_read_symbol" };
+	// 	if (filters.count (zone))
+	// 	{
+	// 		std::cout << zone << ":" << std::endl;
+	// 		std::cout << data << std::endl;
+	// 	}
+	// };
+	// m_decoder.set_trace_callback (callback);
 
 
 	// Initialize counters
@@ -88,7 +89,7 @@ m_packSize (packetSize)
 	// Initialize data members
 	m_data = NULL;
 	m_dataSize = 0;
-	m_dataIndex = 0;
+	m_dataIndex = -1;
 
 	// Set socket receive callback
 	socket->SetRecvCallback (MakeCallback (&NetworkCodingProtocol::Receive, this));
@@ -100,6 +101,9 @@ NetworkCodingProtocol::SendData (std::vector<uint8_t> *data, int dataSize)
 	// Store sending data values
 	m_data = data;
 	m_dataSize = dataSize;
+	m_dataIndex = 0;
+
+	NS_LOG_INFO ("Sending data of size " << m_dataSize << " bytes.");
 
 	// Send next data block to encoder buffer
 	ReadyNextDataBlock ();
@@ -112,23 +116,32 @@ NetworkCodingProtocol::SendData (std::vector<uint8_t> *data, int dataSize)
 void
 NetworkCodingProtocol::ReadyNextDataBlock ()
 {
+
 	if (m_dataIndex >= m_dataSize || m_data == NULL)
 	{
-		NS_LOG_INFO ("No data block remaining.");
+		NS_LOG_INFO ("No data blocks remaining.");
+		m_dataIndex = -1; // Indicates data sending finished
 		return;
 	}
 
-	if (m_dataSize - m_dataIndex < m_encoder.block_size ())
+	NS_LOG_INFO ("Readying block #" << m_dataIndex / m_encoder.block_size () << " for encoding.");
+
+	if (m_dataSize - m_dataIndex <= m_encoder.block_size ())
 	{
 		copy (m_data->begin () + m_dataIndex, m_data->end (), m_encoderBuffer.begin ());
 		m_dataIndex = m_dataSize;
+		m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
 	}
 	else
 	{
 		copy (m_data->begin () + m_dataIndex,
-		 m_data->begin () + m_dataIndex + m_encoder.block_size (), m_encoderBuffer.begin ());
+			m_data->begin () + m_dataIndex + m_encoder.block_size (), m_encoderBuffer.begin ());
 		m_dataIndex += m_encoder.block_size ();
+		m_encoder.set_const_symbols (m_encoderBuffer.data (), m_encoder.block_size ());
 	}
+
+	NS_LOG_INFO ("Encoder block:");
+	printByteVector(m_encoderBuffer, m_encoder.block_size ());
 
 }
 
@@ -150,14 +163,17 @@ NetworkCodingProtocol::SendPacket (Ptr<Packet> packet)
 void
 NetworkCodingProtocol::Send ()
 {
-	uint32_t bytesWritten = m_encoder.write_payload (&m_payload[0]);
+	// If all data sent and acknowledged do nothing
+	if (m_dataIndex < 0) return;
 
+	m_payload[0] = NC_DATA_PACKET_TYPE;
+	uint32_t bytesWritten = m_encoder.write_payload (&m_payload[NC_PACKET_HEADER_SIZE]);
 
-	Ptr<Packet> codedPacket = Create<Packet> (&m_payload[0], bytesWritten);
+	Ptr<Packet> codedPacket = Create<Packet> (&m_payload[0], bytesWritten + NC_PACKET_HEADER_SIZE);
 	m_socket->Send (codedPacket);
 	m_sentCount++;
 
-	NS_LOG_INFO ("Sent coded packet of " << bytesWritten << " bytes.");
+	NS_LOG_INFO ("Sent coded packet of " << codedPacket->GetSize () << " bytes.");
 
 	Simulator::Schedule (Seconds (1.0), &NetworkCodingProtocol::Send, this);
 }
@@ -166,30 +182,52 @@ void
 NetworkCodingProtocol::Receive (Ptr<Socket> socket)
 {
 	// Send packet payload from socket to decoder
-	std::vector<uint8_t> payload (m_decoder.payload_size ());
+	std::vector<uint8_t> payload (m_decoder.payload_size () + NC_PACKET_HEADER_SIZE);
 	Ptr<Packet> packet = socket->Recv ();
-
-	NS_LOG_INFO ("Received packet of " << packet->GetSize () << " bytes.");
-
-	packet->CopyData (&payload[0], m_decoder.payload_size ());
-	m_decoder.read_payload (&payload[0]);
 	m_recvdCount++;
 
-	// Check if decoding is complete
-	if (m_decoder.is_complete ())
+	assert (packet->GetSize () <= NC_PACKET_HEADER_SIZE + payload.size ());
+
+	packet->CopyData (&payload[0], packet->GetSize ());
+
+	uint8_t packetType = payload[0];
+
+	if (packetType == NC_DATA_PACKET_TYPE) 
 	{
-		NS_LOG_INFO ("---Decoding Complete---");
-		NS_LOG_INFO ("Packets received = " << m_recvdCount);
+		NS_LOG_INFO ("Received data packet of " << packet->GetSize () << " bytes.");
+		m_decoder.read_payload (&payload[NC_PACKET_HEADER_SIZE]);
+		// Check if decoding is complete
+		if (m_decoder.is_complete ())
+		{
+			NS_LOG_INFO ("---Decoding Complete---");
+			NS_LOG_INFO ("Packets received = " << m_recvdCount);
 
-		NS_LOG_INFO ("Decoded bytes:");
+			// for (std::vector<uint8_t>::const_iterator i = m_decoderBuffer.begin ();
+			// 	i != m_decoderBuffer.end (); i++)
+			// 	NS_LOG_INFO (std::hex << int(*i));
 
-		for (std::vector<uint8_t>::const_iterator i = m_decoderBuffer.begin ();
-			i != m_decoderBuffer.end (); i++)
-			NS_LOG_INFO (std::hex << int(*i));
-
-		// SendAck
-		Simulator::Stop ();
+			// Send Ack Packet
+			SendAck ();			
+		}
 	}
+	else if (packetType == NC_ACK_PACKET_TYPE)
+	{
+		NS_LOG_INFO ("Received ack packet");
+
+		ReadyNextDataBlock ();
+	}
+}
+
+void
+NetworkCodingProtocol::SendAck ()
+{
+	std::vector<uint8_t> ackPayload(NC_PACKET_HEADER_SIZE);
+	ackPayload[0] = NC_ACK_PACKET_TYPE;
+	Ptr<Packet> ackPacket = Create<Packet> (&ackPayload[0], ackPayload.size ());
+	m_socket->Send (ackPacket);
+	NS_LOG_INFO ("Ack packet sent");
+
+	// Simulator::Stop ();
 }
 
 bool

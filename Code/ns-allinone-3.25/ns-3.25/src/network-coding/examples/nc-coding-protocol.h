@@ -5,7 +5,9 @@
 
 #pragma once
 
-#define DATA_BUFSIZE 409600
+#define NC_DATA_PACKET_TYPE 0
+#define NC_ACK_PACKET_TYPE 1
+#define NC_PACKET_HEADER_SIZE 1
 
 #include <kodocpp/kodocpp.hpp>
 
@@ -23,6 +25,8 @@ public:
 	void Send ();
 
 	void Receive (ns3::Ptr<ns3::Socket> socket);
+
+	void SendAck ();
 
 	bool DecodingComplete ();
 
@@ -62,7 +66,7 @@ private:
 	int m_sentCount;
 	int m_recvdCount;
 
-	/** Sending data
+	/** Sending data members
 	*/
 	std::vector<uint8_t> *m_data;
 	int m_dataSize;
@@ -72,5 +76,12 @@ private:
 	* Helper functions
 	*/
 	void ReadyNextDataBlock ();
+	void printByteVector(std::vector<uint8_t> bytes, int size)
+	{
+		for (std::vector<uint8_t>::const_iterator i = bytes.begin(); i != bytes.end(); i++)
+			std::cout << std::hex << int(*i) << ' ';
+		std::cout << std::endl;
+	}
 
 };
+
