@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{ahlswede}
+Rudolf Ahlswede, Ning Cai, Shuo-Yen~Robert Li, and Raymond~W Yeung.
+\newblock Network information flow.
+\newblock {\em Information Theory, IEEE Transactions on}, 46(4):1204--1216,
+  2000.
+
+\bibitem{mptcp-over}
+Olivier Bonaventure, Mark Handley, Costin Raiciu, et~al.
+\newblock An overview of multipath tcp.
+\newblock {\em ; login:}, 37(5):17--23, 2012.
+
+\bibitem{mptcpnc}
+Jason Cloud, Flavio du~Pin~Calmon, Weifei Zeng, Giovanni Pau, Linda~M Zeger,
+  and Muriel Medard.
+\newblock Multi-path tcp with network coding for mobile devices in
+  heterogeneous networks.
+\newblock In {\em Vehicular Technology Conference (VTC Fall), 2013 IEEE 78th},
+  pages 1--5. IEEE, 2013.
+
+\bibitem{mptcp-nc-mesh}
+Steluta Gheorghiu, Alberto~L{\'o}pez Toledo, and Pablo Rodriguez.
+\newblock Multipath tcp with network coding for wireless mesh networks.
+\newblock In {\em Communications (ICC), 2010 IEEE International Conference on},
+  pages 1--5. IEEE, 2010.
+
+\bibitem{mptcp-ietf}
+Mark Handley, Olivier Bonaventure, Costin Raiciu, and Alan Ford.
+\newblock Tcp extensions for multipath operation with multiple addresses.
+\newblock 2013.
+
+\bibitem{nc-intro}
+Tracey Ho and Desmond Lun.
+\newblock {\em Network coding: an introduction}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{tcpnc}
+Jay~Kumar Sundararajan, Devavrat Shah, Muriel M{\'e}dard, Szymon Jakubczak,
+  Michael Mitzenmacher, and Joa~O Barros.
+\newblock Network coding meets tcp: Theory and implementation.
+\newblock {\em Proceedings of the IEEE}, 99(3):490--512, 2011.
+
+\end{thebibliography}

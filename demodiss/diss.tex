@@ -1,0 +1,179 @@
+% Template for a Computer Science Tripos Part II project dissertation
+\documentclass[12pt,a4paper,twoside,openright]{report}
+\usepackage[pdfborder={0 0 0}]{hyperref}    % turns references into hyperlinks
+\usepackage[margin=25mm]{geometry}  % adjusts page layout
+\usepackage{graphicx}  % allows inclusion of PDF, PNG and JPG images
+\usepackage{verbatim}
+\usepackage{docmute}   % only needed to allow inclusion of proposal.tex
+
+\raggedbottom                           % try to avoid widows and orphans
+\sloppy
+\clubpenalty1000%
+\widowpenalty1000%
+
+\renewcommand{\baselinestretch}{1.1}    % adjust line spacing to make
+                                        % more readable
+
+\begin{document}
+
+\bibliographystyle{plain}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title
+
+
+\pagestyle{empty}
+
+\rightline{\LARGE \textbf{Raahil Shah}}
+
+\vspace*{60mm}
+\begin{center}
+\Huge
+\textbf{MSMPTCP using Random Linear Network Coding} \\[5mm]
+Computer Science Tripos -- Part II \\[5mm]
+Churchill College \\[5mm]
+\today  % today's date
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Proforma, table of contents and list of figures
+
+\pagestyle{plain}
+
+\chapter*{Proforma}
+
+{\large
+\begin{tabular}{ll}
+Name:               & \bf Raahil Shah                       \\
+College:            & \bf Churchill College                     \\
+Project Title:      & \bf MSMPTCP using Random Linear Network Coding \\
+Examination:        & \bf Computer Science Tripos -- Part II, May 2016  \\
+Word Count:         & \bf 0\footnotemark[1]
+                      (well less than the 12000 limit)  \\
+Project Originator: & Dr J. Crowcroft                    \\
+Supervisor:         & Dr J. Crowcroft                    \\ 
+\end{tabular}
+}
+\footnotetext[1]{This word count was computed
+by \texttt{detex diss.tex | tr -cd '0-9A-Za-z $\tt\backslash$n' | wc -w}
+}
+\stepcounter{footnote}
+
+
+\section*{Original Aims of the Project}
+
+The original aim of this project was to combine Multipath TCP (MPTCP) with the Network Coding paradigm while allowing for many-to-one flows, i.e. multiple sources. While Multipath TCP provides greater resource usage and often near optimal load balancing by spreading information across multiple flows, the addition of network coding, by spreading information over both packets and flows, aims to maximise the degrees of freedom available from resource pooling. The protocol was to be testing on simulated wireless topologies in a network simulator to evaluate its performance in terms of throughput and robustness against failures. 
+
+\section*{Work Completed}
+
+In this project I provide a simple design and implementation of network coding using the random linear network coding technique. The coding layer is run in the chosen network simulator: ns-3 using the Kodo library for C++ and ns3. Due to challenges (mentioned below) the network coding is run over UDP, rather than MPTCP, in the application layer. The simulations achieve reliable file transfer over UDP and increased reliable throughput over lossy wireless channels.
+
+%TODO include eval
+
+\section*{Special Difficulties}
+
+After researching MPTCP and MPTCP with network coding (MPTCP/NC) protocols, implementing the multisource and network coding extensions seemed too ambitious, especially in the time frame of this project. Further, the main challenge with using MPTCP for this project was the lack of a publicly available MPTCP module implemented for ns3. In consultation with my supervisor and the overseers I decided to follow the backup strategy laid out in the proposal [Appendix \ref{ch:proposal}] which was to use the coding layer over UDP instead of MPTCP. 
+ 
+\newpage
+\section*{Declaration}
+
+I, Raahil Shah of Churchill College, being a candidate for Part II of the Computer
+Science Tripos, hereby declare
+that this dissertation and the work described in it are my own work,
+unaided except as may be specified below, and that the dissertation
+does not contain material that has already been used to any substantial
+extent for a comparable purpose.
+
+\bigskip
+\leftline{Signed }
+
+\medskip
+\leftline{Date }
+
+\tableofcontents
+
+\listoffigures
+
+\newpage
+\section*{Acknowledgements}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% now for the chapters
+
+\pagestyle{headings}
+
+\chapter{Introduction} \label{ch:intro}
+
+\section{Motivation for the Project}
+
+The widespread success and rapid growth of wireless technologies in communication networks make it clear that wireless networking is closely linked to the present and future of communications. However, the Transmission Control Protocol (TCP) presently used in a wide variety of applications for reliable data transfer, suffers greatly in performance from the challenges presented by today's wireless networks. These include the multipath nature of networks, for example with devices having multiple wireless interfaces, datacenters having redundant paths and large server farms employing multihoming, as well as the lossy nature of wireless links resulting in the need for complex management schemes in the protocol to ensure reliable transmission. Recent research work shows that these challenges can be addressed by the the concept of network coding, originally introduced by Ahlswede et al \cite{ahlswede}, and the new Multipath TCP (MPTCP)\cite{mptcp-ietf}, an ongoing effort of the Internet Engineering Task Force (IETF) MPTCP working group.
+
+Network Coding is a field of information theory that presents an alternative to the conventional store-and-forward routing paradigm and allows us to extend existing resource pooling from information streams sharing network resources to spreading the information over the data packets as well. Using network coding, nodes can modify the data of the packets across the network, either at the source or at an intermediate node (router) which can lead to a number of performance benefits, including reducing the number of transmissions needed for a reliable transfer providing increased throughput, increasing robustness to packet losses and link failures as well as potential implicit security mechanisms from the transmission of coded rather than raw packet data. Summarised developments on network coding and its benefits can be found in \cite{nc-intro}.
+
+MPTCP is a major modification of TCP that allows a single transport layer connection to use multiple paths simultaneously. It's application can be seen in many real world scenarios, for example a cell phone or laptop with multiple network interfaces (WiFi/3G) downloading a file. MPTCP allows the device to set up multiple `subflows' for a single MPTCP session. This not only leads to better load balancing across the flows which significantly benefits throughput especially for lossy wireless networks like WiFi and 3G, but also results in smoother handover in the case that one of the interfaces goes down as compared to an application layer handover over TCP. \cite{mptcp-over} presents a succinct overview of the implementation and performance of the protocol.  
+
+Several suggestions on combining network coding with MPTCP or TCP have been proposed in literature (\cite{mptcp-nc-mesh}, \cite{mptcpnc}, \cite{tcpnc}). They indicate that MPTCP/NC provides better throughput, robustness to packet losses and scheduling of packets on each subflow, under certain experimental conditions and assumptions. These results are enough to show us that integrating network coding in today's protocol stack has great potential to strengthen and enhance wireless communications. 
+
+\subsection{Project Description}
+
+%TODO: Include eval
+
+This project successfully demonstrates the benefits of network coding with respect to reliable transfer, throughput gain and robustness to packet losses on wireless networks. This is achieved by implementing a simple network coding protocol which is described in Section \ref{sec:nclayer}. The protocol is demonstrated to run in the application layer of the OSI protocol stack over a standard, real world network stack comprising of User Datagram Protocol (UDP) in the transport layer, Internet Protocol version 4 (IPv4) in the network layer and ad hoc 802.11 WiFi in the link and physical layers. 
+
+The network coding scheme implemented is Intra-flow network coding using Random Linear Coding (RLC), discussed in Section \ref{sec:nctheory}, which mixes or codes datagrams from the same UDP flow. The coding layer is used to implement two techniques of Intra-flow network coding:
+\begin{description}
+ 	\item[Random Linear Source Coding] where only the source node(s) code the original (native) packets to transmit a sequence of coded packets into the network while the intermediate nodes simply relay the coded packets received onwards using the conventional store-and-forward paradigm.
+ 	\item[Random Linear Network Coding] where along with RLC at the source node(s), the intermediate relay nodes may perform `re-coding' operations on the coded packets received, forwarding new coding packets to the next hop in the network.
+ \end{description}
+ The performance of each technique is evaluated in Sections \ref{sec:rlsc}, \ref{sec:rlnc}. We also look at the effects of varying the RLC parameters of the size of the Galois Field used to select coding coefficients and the 
+
+
+\chapter{Preparation} \label{ch:prep}
+
+\section{Network Coding} \label{sec:nctheory}
+\section{Network Protocols: MPTCP, TCP/NC, UDP}
+\section{Network Simulator: ns3}
+
+\chapter{Implementation} \label{ch:imp}
+
+\section{Network Coding Layer} \label{sec:nclayer}
+
+\subsection{Protocol Description}
+\subsection{Encoding}
+\subsection{Decoding}
+
+\section{Reliable Transfer over UDP}
+
+\section{Kodo Network Coding Libary}
+
+\section{Simulation in ns-3} \label{sec:ns3}
+
+\chapter{Evaluation} \label{ch:eval}
+
+\section{Reliable File Transfer} \label{sec:relUDP}
+
+\section{Varying Field and Generation Size} \label{sec:fieldgen}
+
+\section{Random Linear Source Coding} \label{sec:rlsc}
+
+\section{Random Linear Network Coding} \label{sec:rlnc}
+
+\chapter{Conclusion} \label{ch:conc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% the bibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{refs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% the appendices
+\appendix
+
+\chapter{Project Proposal}
+\label{ch:proposal}
+
+\input{proposal}
+
+\end{document}
