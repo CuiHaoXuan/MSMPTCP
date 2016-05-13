@@ -1,0 +1,13 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Butterfly network topology illustrating the throughput gain obtained by using linear network coding.\cite {nc-intro}}}{15}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Two link tandem network topology.\cite {nc-intro}}}{15}{figure.2.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Network coding layer protocol overview.}}{18}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Network coding protocol packet structure for data and ACK packets.}}{19}{figure.3.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces A trace of the encoder and decoder operations in an ns-3 simulation of my network coding protocol.}}{40}{figure.C.1}
